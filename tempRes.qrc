@@ -1,0 +1,16 @@
+<RCC>
+    <qresource prefix="/">
+        <file>blue_triangle.png</file>
+        <file>green_triangle.png</file>
+        <file>TEstSVG.svg</file>
+        <file>TrianglePRD.svg</file>
+        <file>TrianglePRM.svg</file>
+        <file>TrianglePRDD.svg</file>
+        <file>TrianglePRMM.svg</file>
+        <file>stylesheet-branch-closed.svg</file>
+        <file>stylesheet-branch-end.svg</file>
+        <file>stylesheet-branch-more.svg</file>
+        <file>stylesheet-branch-open.svg</file>
+        <file>stylesheet-vline.svg</file>
+    </qresource>
+</RCC>

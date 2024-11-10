@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   version="1.1"
+   id="svg1"
+   width="24"
+   height="17"
+   viewBox="0 0 24 17"
+   sodipodi:docname="stylesheet-vline.svg"
+   inkscape:version="1.3.1 (9b9bdc1480, 2023-11-25, custom)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1">
+    <filter
+       inkscape:collect="always"
+       style="color-interpolation-filters:sRGB"
+       id="filter3"
+       x="-0.09512713"
+       y="-1.4832158"
+       width="1.1902543"
+       height="3.9664317">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="0.46942113"
+         id="feGaussianBlur3" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       style="color-interpolation-filters:sRGB"
+       id="filter4"
+       x="-1.7223378"
+       y="-0.066143571"
+       width="4.4446755"
+       height="1.1322871">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="0.46779101"
+         id="feGaussianBlur4" />
+    </filter>
+  </defs>
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="68.705882"
+     inkscape:cx="12.000428"
+     inkscape:cy="8.5"
+     inkscape:window-width="2508"
+     inkscape:window-height="1371"
+     inkscape:window-x="1972"
+     inkscape:window-y="32"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g1" />
+  <g
+     inkscape:groupmode="layer"
+     inkscape:label="Image"
+     id="g1">
+    <image
+       width="24"
+       height="17"
+       preserveAspectRatio="none"
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAARBAMAAAA1VnEDAAAAFVBMVEX///9jVk1jVk1jVk1jVk1j&#10;Vk1jVk0FX1vqAAAAB3RSTlMASkYzNlJTlIOfTgAAABtJREFUCFtjZAABRvkHYIoWnGRkThBxeqjE&#10;AQB+0hGJmbsHogAAAABJRU5ErkJggg==&#10;"
+       id="image1" />
+    <rect
+       style="fill:#b5e61d"
+       id="rect1"
+       width="1.0086272"
+       height="16.979702"
+       x="11.48325"
+       y="0.021436876" />
+    <rect
+       style="fill:#b5e61d;stroke-width:1.01052"
+       id="rect2"
+       width="11.726768"
+       height="0.90478337"
+       x="12.247387"
+       y="7.5064921" />
+    <rect
+       style="fill:#b5e61d;filter:url(#filter3)"
+       id="rect3"
+       width="11.843211"
+       height="0.75957298"
+       x="12.16239"
+       y="7.5604205" />
+    <rect
+       style="fill:#b5e61d;filter:url(#filter4)"
+       id="rect4"
+       width="0.65184569"
+       height="16.97366"
+       x="11.720287"
+       y="0.013774153" />
+  </g>
+</svg>
