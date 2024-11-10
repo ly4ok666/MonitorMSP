@@ -6,6 +6,11 @@ Tsap::Tsap(QWidget *parent)
     , ui(new Ui::Tsap)
 {
     ui->setupUi(this);
+    ui->stackedWidget->setCurrentIndex(0);
+
+    Table = new _TableFormularTargets*[m_rows];
+    for (int i = 0; i < m_rows; i++)
+        Table[i] = new _TableFormularTargets[m_cols];
 
     nIndex = 0;
     ui->widget->axisRect()->setBackground(Qt::black);
@@ -154,6 +159,8 @@ Tsap::Tsap(QWidget *parent)
 
 void Tsap::Slot_clickGraph(QCPAbstractPlottable* potItem, int num, QMouseEvent* event)
 {
+    ui->stackedWidget->setCurrentIndex(1);
+
     double dX = potItem->interface1D()->dataMainKey(num);
     double dY = potItem->interface1D()->dataMainValue(num);
 
@@ -162,6 +169,9 @@ void Tsap::Slot_clickGraph(QCPAbstractPlottable* potItem, int num, QMouseEvent* 
     m_ItemText->setText(QString("Point Information\nX = %1\nY = %2").arg(QString::number(dX)).arg(QString::number(dY)));
 
     ui->widget->replot();
+    getTable(0,0);
+
+
 }
 
 void Tsap::Slot_addData()
@@ -219,184 +229,329 @@ void Tsap::slot_addingSignalsToPlot(QVector<_SignalParam_formular> Targets)
             if(Targets[i].W9.TipPomehi >= 12 && Targets[i].W9.TipPomehi <= 14)
             {
                 if(!Targets[i].W2.semisphere)
+                {
                     ui->widget->graph(0)->addData(kni, 75);
+                    setTable(0,0,Targets[i]);
+                }
                 else
+                {
                     ui->widget->graph(0)->addData(kni, -75);
+                    setTable(1,0,Targets[i]);
+                }
             }
             else if(Targets[i].W9.TipPomehi == 7)
             {
                 if(!Targets[i].W2.semisphere)
+                {
                     ui->widget->graph(1)->addData(is, 75);
+                    setTable(0,1,Targets[i]);
+                }
                 else
+                {
                     ui->widget->graph(1)->addData(is, -75);
+                    setTable(1,1,Targets[i]);
+                }
             }
             else
             {
                 if(!Targets[i].W2.semisphere)
+                {
                     ui->widget->graph(2)->addData(other, 75);
+                    setTable(0,2,Targets[i]);
+                }
                 else
+                {
                     ui->widget->graph(2)->addData(other, -75);
+                    setTable(1,2,Targets[i]);
+                }
             }
             break;
         case 1:
             if(Targets[i].W9.TipPomehi >= 12 && Targets[i].W9.TipPomehi <= 14)
             {
                 if(!Targets[i].W2.semisphere)
+                {
                     ui->widget->graph(0)->addData(kni, 65);
+                    setTable(0,0,Targets[i]);
+                }
                 else
+                {
                     ui->widget->graph(0)->addData(kni, -65);
+                    setTable(1,0,Targets[i]);
+                }
             }
             else if(Targets[i].W9.TipPomehi == 7)
             {
                 if(!Targets[i].W2.semisphere)
+                {
                     ui->widget->graph(1)->addData(is, 65);
+                    setTable(0,1,Targets[i]);
+                }
                 else
+                {
                     ui->widget->graph(1)->addData(is, -65);
+                    setTable(1,1,Targets[i]);
+                }
             }
             else
             {
                 if(!Targets[i].W2.semisphere)
+                {
                     ui->widget->graph(2)->addData(other, 65);
+                    setTable(0,2,Targets[i]);
+                }
                 else
+                {
                     ui->widget->graph(2)->addData(other, -65);
+                    setTable(1,2,Targets[i]);
+                }
             }
             break;
         case 2:
             if(Targets[i].W9.TipPomehi >= 12 && Targets[i].W9.TipPomehi <= 14)
             {
                 if(!Targets[i].W2.semisphere)
+                {
                     ui->widget->graph(0)->addData(kni, 55);
+                    setTable(0,0,Targets[i]);
+                }
                 else
+                {
                     ui->widget->graph(0)->addData(kni, -55);
+                    setTable(1,0,Targets[i]);
+                }
             }
             else if(Targets[i].W9.TipPomehi == 7)
             {
                 if(!Targets[i].W2.semisphere)
+                {
                     ui->widget->graph(1)->addData(is, 55);
+                    setTable(0,1,Targets[i]);
+                }
                 else
+                {
                     ui->widget->graph(1)->addData(is, -55);
+                    setTable(1,1,Targets[i]);
+                }
             }
             else
             {
                 if(!Targets[i].W2.semisphere)
+                {
                     ui->widget->graph(2)->addData(other, 55);
+                    setTable(0,2,Targets[i]);
+                }
                 else
+                {
                     ui->widget->graph(2)->addData(other, -55);
+                    setTable(1,2,Targets[i]);
+                }
             }
             break;
         case 3:
             if(Targets[i].W9.TipPomehi >= 12 || Targets[i].W9.TipPomehi <= 14)
             {
                 if(!Targets[i].W2.semisphere)
+                {
                     ui->widget->graph(0)->addData(kni, 45);
+                    setTable(0,0,Targets[i]);
+                }
                 else
+                {
                     ui->widget->graph(0)->addData(kni, -45);
+                    setTable(1,0,Targets[i]);
+                }
             }
             else if(Targets[i].W9.TipPomehi == 7)
             {
                 if(!Targets[i].W2.semisphere)
+                {
                     ui->widget->graph(1)->addData(is, 45);
+                    setTable(0,1,Targets[i]);
+                }
                 else
+                {
                     ui->widget->graph(1)->addData(is, -45);
+                    setTable(1,1,Targets[i]);
+                }
             }
             else
             {
                 if(!Targets[i].W2.semisphere)
+                {
                     ui->widget->graph(2)->addData(other, 45);
+                    setTable(0,2,Targets[i]);
+                }
                 else
+                {
                     ui->widget->graph(2)->addData(other, -45);
+                    setTable(1,2,Targets[i]);
+                }
             }
             break;
         case 4:
             if(Targets[i].W9.TipPomehi >= 12 && Targets[i].W9.TipPomehi <= 14)
             {
                 if(!Targets[i].W2.semisphere)
+                {
                     ui->widget->graph(0)->addData(kni, 35);
+                    setTable(0,0,Targets[i]);
+                }
                 else
+                {
                     ui->widget->graph(0)->addData(kni, -35);
+                    setTable(1,0,Targets[i]);
+                }
             }
             else if(Targets[i].W9.TipPomehi == 7)
             {
                 if(!Targets[i].W2.semisphere)
+                {
                     ui->widget->graph(1)->addData(is, 35);
+                    setTable(0,1,Targets[i]);
+                }
                 else
+                {
                     ui->widget->graph(1)->addData(is, -35);
+                    setTable(1,1,Targets[i]);
+                }
             }
             else
             {
                 if(!Targets[i].W2.semisphere)
+                {
                     ui->widget->graph(2)->addData(other, 35);
+                    setTable(0,2,Targets[i]);
+                }
                 else
+                {
                     ui->widget->graph(2)->addData(other, -35);
+                    setTable(1,2,Targets[i]);
+                }
             }
             break;
         case 5:
             if(Targets[i].W9.TipPomehi >= 12 && Targets[i].W9.TipPomehi <= 14)
             {
                 if(!Targets[i].W2.semisphere)
+                {
                     ui->widget->graph(0)->addData(kni, 25);
+                    setTable(0,0,Targets[i]);
+                }
                 else
+                {
                     ui->widget->graph(0)->addData(kni, -25);
+                    setTable(1,0,Targets[i]);
+                }
             }
             else if(Targets[i].W9.TipPomehi == 7)
             {
                 if(!Targets[i].W2.semisphere)
+                {
                     ui->widget->graph(1)->addData(is, 25);
+                    setTable(0,1,Targets[i]);
+                }
                 else
+                {
                     ui->widget->graph(1)->addData(is, -25);
+                    setTable(1,1,Targets[i]);
+                }
             }
             else
             {
                 if(!Targets[i].W2.semisphere)
+                {
                     ui->widget->graph(2)->addData(other, 25);
+                    setTable(0,2,Targets[i]);
+                }
                 else
+                {
                     ui->widget->graph(2)->addData(other, -25);
+                    setTable(1,2,Targets[i]);
+                }
             }
             break;
         case 6:
             if(Targets[i].W9.TipPomehi >= 12 && Targets[i].W9.TipPomehi <= 14)
             {
                 if(!Targets[i].W2.semisphere)
+                {
                     ui->widget->graph(0)->addData(kni, 15);
+                    setTable(0,0,Targets[i]);
+                }
                 else
+                {
                     ui->widget->graph(0)->addData(kni, -15);
+                    setTable(1,0,Targets[i]);
+                }
             }
             else if(Targets[i].W9.TipPomehi == 7)
             {
                 if(!Targets[i].W2.semisphere)
+                {
                     ui->widget->graph(1)->addData(is, 15);
+                    setTable(0,1,Targets[i]);
+                }
                 else
+                {
                     ui->widget->graph(1)->addData(is, -15);
+                    setTable(1,1,Targets[i]);
+                }
             }
             else
             {
                 if(!Targets[i].W2.semisphere)
+                {
                     ui->widget->graph(2)->addData(other, 15);
+                    setTable(0,2,Targets[i]);
+                }
                 else
+                {
                     ui->widget->graph(2)->addData(other, -15);
+                    setTable(1,2,Targets[i]);
+                }
             }
             break;
         case 7:
             if(Targets[i].W9.TipPomehi >= 12 && Targets[i].W9.TipPomehi <= 14)
             {
                 if(!Targets[i].W2.semisphere)
+                {
                     ui->widget->graph(0)->addData(kni, 5);
+                    setTable(0,0,Targets[i]);
+                }
                 else
+                {
                     ui->widget->graph(0)->addData(kni, -5);
+                    setTable(1,0,Targets[i]);
+                }
+
             }
             else if(Targets[i].W9.TipPomehi == 7)
             {
                 if(!Targets[i].W2.semisphere)
+                {
                     ui->widget->graph(1)->addData(is, 5);
+                    setTable(0,1,Targets[i]);
+                }
                 else
+                {
                     ui->widget->graph(1)->addData(is, -5);
+                    setTable(1,1,Targets[i]);
+                }
             }
             else
             {
                 if(!Targets[i].W2.semisphere)
+                {
                     ui->widget->graph(2)->addData(other, 5);
+                    setTable(0,2,Targets[i]);
+                }
                 else
+                {
                     ui->widget->graph(2)->addData(other, -5);
+                    setTable(1,2,Targets[i]);
+                }
             }
             break;
         default:
@@ -409,7 +564,39 @@ void Tsap::slot_addingSignalsToPlot(QVector<_SignalParam_formular> Targets)
 
 Tsap::~Tsap()
 {
+    for (int i = 0; i < m_rows; i++)
+        delete[] Table[i];
+
+    delete[] Table;
     delete ui;
+}
+
+void Tsap::setTable(int col, int row, _SignalParam_formular Targets)
+{
+    _formularTargetsForTable TempTargets;
+    TempTargets.Carrier = Targets.W3.Carrier;
+    TempTargets.Dlit = Targets.W4.DlitImp;
+    TempTargets.Per = Targets.W5.PulsePeriod_ml;
+    Table[row][col].TargetsTable.push_back(TempTargets);
+}
+
+QVector<_formularTargetsForTable> Tsap::getTable(int col, int row)
+{
+    QVector<_formularTargetsForTable> TempTargets;
+    for(int i = 0; i < 2; ++i)
+    {
+        qDebug() << "колонка: " << i;
+        for(int j = 0; j < 2; ++j)
+        {
+            qDebug() << "строка: " << j;
+            if(Table[j][i].TargetsTable.size())
+                qDebug() << "размер: " << Table[j][i].TargetsTable[j].Carrier;
+            // qDebug() << "Частота: " << Table[j][i].TargetsTable[j].Carrier;
+            // qDebug() << "Длит: " << Table[j][i].TargetsTable[j].Dlit;
+            // qDebug() << "Период: " << Table[j][i].TargetsTable[j].Per;
+        }
+    }
+    return Table[row][col].TargetsTable;
 }
 
 void Tsap::Slot_set_workingmode_from_mw(unsigned char value, unsigned short countTargetsPPS, unsigned short countTargetsZPS)

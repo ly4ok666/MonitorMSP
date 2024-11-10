@@ -1,3 +1,7 @@
-08-11-2024 02:41:34| Warning  | 0 | |  | QString::arg: Argument missing: "SAP" , 1
-08-11-2024 02:41:34| Warning  | 0 | |  | QString::arg: Argument missing: "RIC" , 2
-08-11-2024 02:41:34| Warning  | 0 | |  | QString::arg: Argument missing: "VSK" , 3
+11-11-2024 01:47:47| Warning  | 0 | |  | QString::arg: Argument missing: "SAP" , 1
+11-11-2024 01:47:47| Warning  | 0 | |  | QString::arg: Argument missing: "RIC" , 2
+11-11-2024 01:47:47| Warning  | 0 | |  | QString::arg: Argument missing: "VSK" , 3
+11-11-2024 01:47:50| Debug    | 23 | ../../mytcpsocket.cpp| ConnectToMSP | Connecting...
+11-11-2024 01:47:53| Debug    | 31 | ../../mytcpsocket.cpp| ConnectToMSP | Not Connect with MSP!!
+11-11-2024 01:47:53| Debug    | 358 | ../../mainwindow.cpp| discardSocket | Disconnect!
+11-11-2024 01:47:55| Debug    | 12 | ../../mytcpsocket.cpp| ~MyTcpsocket | удалился объект ТестТаргетс

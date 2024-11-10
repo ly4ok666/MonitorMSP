@@ -4,10 +4,21 @@
 #include <QWidget>
 #include <qcustomplot.h>
 #include "Targets.h"
+#include <QMap>
 
 namespace Ui {
 class Tsap;
 }
+
+typedef struct {
+    unsigned Carrier;
+    unsigned Dlit;
+    unsigned Per;
+} _formularTargetsForTable;
+typedef struct
+{
+    QVector<_formularTargetsForTable> TargetsTable;
+} _TableFormularTargets;
 
 class Tsap : public QWidget
 {
@@ -16,7 +27,8 @@ class Tsap : public QWidget
 public:
     explicit Tsap(QWidget *parent = nullptr);
     ~Tsap();
-
+    void setTable(int col, int row, _SignalParam_formular Targets);
+    QVector<_formularTargetsForTable> getTable(int col, int row);
 private:
     Ui::Tsap *ui;
 
@@ -32,6 +44,12 @@ private:
     QPixmap customScatterPath, customScatterPath2, customScatterPath3, customScatterPath4, customScatterPath5;
     int nIndex;
     QTimer timer;
+    int m_rows = 3;
+    int m_cols = 2;
+    _TableFormularTargets** Table;;
+
+
+
 
 public slots:
     //данный слот создан для получения данных по сигналу: void signals_for_sap_workingmode(); в майн виндоус!!
@@ -41,5 +59,6 @@ public slots:
     void Slot_addData();
     void slot_addingSignalsToPlot(QVector<_SignalParam_formular>);
 };
+
 
 #endif // TSAP_H

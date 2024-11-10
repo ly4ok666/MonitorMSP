@@ -8,7 +8,7 @@
 #include "SPI.h"
 
 
-//#define LOCALHOST1
+
 
 class MyTcpsocket: public QObject
 {

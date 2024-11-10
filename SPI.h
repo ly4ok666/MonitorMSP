@@ -37,13 +37,19 @@ typedef struct _SPI_Packet
 //	uint16_t nothing;
 } _SPI_Packet;
 #pragma pack(pop)
-
+//#define LOCALHOST1
+#ifdef LOCALHOST1
+#define TARGET_NUM 6//56
+#define startBit 0
+#else
+#define TARGET_NUM 56//56
+#define startBit 1
+#endif
 #define SAP_STATE_WORD_NUM 4
 #define VSK_WORD_NUM 4
 #define TARGET_WORD_NUM 9
-#define TARGET_NUM 56//56
-#define startBit 1
-#define maxsizepack (1+sizeof(_Periodical_formular)+sizeof(_SignalParam_formular)*56+sizeof(_VSKRes_formular))
+
+#define maxsizepack (startBit + sizeof(_Periodical_formular) + sizeof(_SignalParam_formular) * TARGET_NUM + sizeof(_VSKRes_formular))
 
 #define WORD_SIZE sizeof(uint16_t)
 

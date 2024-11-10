@@ -181,6 +181,9 @@
        <height>327</height>
       </size>
      </property>
+     <property name="currentIndex">
+      <number>1</number>
+     </property>
      <widget class="QWidget" name="page">
       <widget class="QWidget" name="gridLayoutWidget">
        <property name="geometry">
@@ -283,7 +286,39 @@
        </layout>
       </widget>
      </widget>
-     <widget class="QWidget" name="page_2"/>
+     <widget class="QWidget" name="page_2">
+      <widget class="QTableWidget" name="tableWidget">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>30</y>
+         <width>851</width>
+         <height>321</height>
+        </rect>
+       </property>
+       <property name="rowCount">
+        <number>3</number>
+       </property>
+       <property name="columnCount">
+        <number>3</number>
+       </property>
+       <attribute name="horizontalHeaderMinimumSectionSize">
+        <number>23</number>
+       </attribute>
+       <attribute name="horizontalHeaderDefaultSectionSize">
+        <number>278</number>
+       </attribute>
+       <attribute name="verticalHeaderDefaultSectionSize">
+        <number>71</number>
+       </attribute>
+       <row/>
+       <row/>
+       <row/>
+       <column/>
+       <column/>
+       <column/>
+      </widget>
+     </widget>
     </widget>
    </item>
   </layout>
