@@ -101,6 +101,7 @@ void tvsk::addChildVSKRes_formular(QTreeWidgetItem *parent, QString name, QStrin
         QBrush b (Qt::red); //можно было бы делигат добавить и как в кайф менять цвет но, позже
         itm->setForeground(0,b);
         itm->setForeground(1,b);
+        ui->Tvsk->expandItem( itm);
     }
         parent->addChild(itm);
         if(!addToParent) return;

@@ -19,6 +19,7 @@ Tric::~Tric()
 void Tric::addRootPeriodical_formular(QString name, _Periodical_formular Periodical_formular)
 {
     QTreeWidgetItem *itm = new QTreeWidgetItem(ui->Ttargets_sap);
+    ui->Ttargets_sap->expandItem( itm);
     itm->setText(0, name);
     //ui->Ttargets_sap->addTopLevelItem(parent);
     addChildPeriodical_formular(itm, "Visota", QString::number(Periodical_formular.W5.Visota));
@@ -42,6 +43,7 @@ void Tric::addRootTargets_formular( QString name, _SignalParam_formular Targets)
 {
 
     QTreeWidgetItem *itm = new QTreeWidgetItem(ui->Ttargets_sap);
+    ui->Ttargets_sap->expandItem( itm);
     itm->setText(0, name);
     //ui->Ttargets_sap->addTopLevelItem(parent);
     addChildTargets_formular(itm, "semisphere", QString::number(Targets.W2.semisphere));
@@ -66,6 +68,7 @@ void Tric::addChildPeriodical_formular(QTreeWidgetItem *parent, QString name, QS
     QTreeWidgetItem *itm = new QTreeWidgetItem();
     itm->setText(0, name);
     itm->setText(1, description);
+
 
 
     parent->addChild(itm);

@@ -78,7 +78,6 @@ void MyTcpsocket::slot_read_to_msp()
             in.append(socket->read(maxsizepack));
             qDebug() << "Read Data : " << in;
         }
-            //in.append(socket->readAll());
         else {
             return;
         }
