@@ -29,6 +29,7 @@ public:
     ~Tsap();
     void setTable(int col, int row, _SignalParam_formular Targets);
     QVector<_formularTargetsForTable> getTable(int col, int row);
+    void eraseTargetTable();
 private:
     Ui::Tsap *ui;
 
@@ -44,8 +45,8 @@ private:
     QPixmap customScatterPath, customScatterPath2, customScatterPath3, customScatterPath4, customScatterPath5;
     int nIndex;
     QTimer timer;
-    int m_rows = 3;
-    int m_cols = 2;
+    int m_rows = 16;
+    int m_cols = 3;
     _TableFormularTargets** Table;;
 
 

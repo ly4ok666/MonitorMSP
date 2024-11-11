@@ -160,16 +160,120 @@ Tsap::Tsap(QWidget *parent)
 void Tsap::Slot_clickGraph(QCPAbstractPlottable* potItem, int num, QMouseEvent* event)
 {
     ui->stackedWidget->setCurrentIndex(1);
-
+    QVector<_formularTargetsForTable> TempTargets;
     double dX = potItem->interface1D()->dataMainKey(num);
     double dY = potItem->interface1D()->dataMainValue(num);
+
+    int dx = dX;
+    int y = std::abs(dY);
+    int dy;
+    switch(y)
+    {
+    case 5:
+        if(dY > 0)
+        {
+            dy = 7;
+            qDebug() << "сколько есть сигналов: " << getTable(dx,dy).size();
+        }
+        else
+        {
+            dy = 15;
+            qDebug() << "сколько есть сигналов: " << getTable(dx,dy).size();
+        }
+        break;
+    case 15:
+        if(dY > 0)
+        {
+            dy = 6;
+            qDebug() << "сколько есть сигналов: " << getTable(dx,dy).size();
+        }
+        else
+        {
+            dy = 14;
+            qDebug() << "сколько есть сигналов: " << getTable(dx,dy).size();
+        }
+        break;
+    case 25:
+        if(dY > 0)
+        {
+            dy = 5;
+            qDebug() << "сколько есть сигналов: " << getTable(dx,dy).size();
+        }
+        else
+        {
+            dy = 13;
+            qDebug() << "сколько есть сигналов: " << getTable(dx,dy).size();
+        }
+        break;
+    case 35:
+        if(dY > 0)
+        {
+            dy = 4;
+            qDebug() << "сколько есть сигналов: " << getTable(dx,dy).size();
+        }
+        else
+        {
+            dy = 12;
+            qDebug() << "сколько есть сигналов: " << getTable(dx,dy).size();
+        };
+        break;
+    case 45:
+        if(dY > 0)
+        {
+            dy = 3;
+            qDebug() << "сколько есть сигналов: " << getTable(dx,dy).size();
+        }
+        else
+        {
+            dy = 11;
+            qDebug() << "сколько есть сигналов: " << getTable(dx,dy).size();
+        }
+        break;
+    case 55:
+        if(dY > 0)
+        {
+            dy = 2;
+            qDebug() << "сколько есть сигналов: " << getTable(dx,dy).size();
+        }
+        else
+        {
+            dy = 10;
+            qDebug() << "сколько есть сигналов: " << getTable(dx,dy).size();
+        }
+        break;
+    case 65:
+        if(dY > 0)
+        {
+            dy = 1;
+            qDebug() << "сколько есть сигналов: " << getTable(dx,dy).size();
+        }
+        else
+        {
+            dy = 9;
+            qDebug() << "сколько есть сигналов: " << getTable(dx,dy).size();
+        }
+        break;
+    case 75:
+        if(dY > 0)
+        {
+            dy = 0;
+            qDebug() << "сколько есть сигналов: " << getTable(dx,dy).size();
+        }
+        else
+        {
+            dy = 8;
+            qDebug() << "сколько есть сигналов: " << getTable(dx,dy).size();
+        }
+        break;
+    default:
+        break;
+    }
 
     ui->widget->layer("overlay")->setVisible(true);
 
     m_ItemText->setText(QString("Point Information\nX = %1\nY = %2").arg(QString::number(dX)).arg(QString::number(dY)));
 
     ui->widget->replot();
-    getTable(0,0);
 
 
 }
@@ -215,6 +319,7 @@ void Tsap::slot_addingSignalsToPlot(QVector<_SignalParam_formular> Targets)
         ui->widget->graph(i)->data().data()->clear();
     }
        // ui->widget->replot();
+    eraseTargetTable();
 
     int k = -1;
     float kni = 0.5, is = 1.5, other = 2.5;
@@ -236,7 +341,7 @@ void Tsap::slot_addingSignalsToPlot(QVector<_SignalParam_formular> Targets)
                 else
                 {
                     ui->widget->graph(0)->addData(kni, -75);
-                    setTable(1,0,Targets[i]);
+                    setTable(0,8,Targets[i]);
                 }
             }
             else if(Targets[i].W9.TipPomehi == 7)
@@ -244,12 +349,12 @@ void Tsap::slot_addingSignalsToPlot(QVector<_SignalParam_formular> Targets)
                 if(!Targets[i].W2.semisphere)
                 {
                     ui->widget->graph(1)->addData(is, 75);
-                    setTable(0,1,Targets[i]);
+                    setTable(1,0,Targets[i]);
                 }
                 else
                 {
                     ui->widget->graph(1)->addData(is, -75);
-                    setTable(1,1,Targets[i]);
+                    setTable(1,8,Targets[i]);
                 }
             }
             else
@@ -257,12 +362,12 @@ void Tsap::slot_addingSignalsToPlot(QVector<_SignalParam_formular> Targets)
                 if(!Targets[i].W2.semisphere)
                 {
                     ui->widget->graph(2)->addData(other, 75);
-                    setTable(0,2,Targets[i]);
+                    setTable(2,0,Targets[i]);
                 }
                 else
                 {
                     ui->widget->graph(2)->addData(other, -75);
-                    setTable(1,2,Targets[i]);
+                    setTable(2,8,Targets[i]);
                 }
             }
             break;
@@ -272,12 +377,12 @@ void Tsap::slot_addingSignalsToPlot(QVector<_SignalParam_formular> Targets)
                 if(!Targets[i].W2.semisphere)
                 {
                     ui->widget->graph(0)->addData(kni, 65);
-                    setTable(0,0,Targets[i]);
+                    setTable(0,1,Targets[i]);
                 }
                 else
                 {
                     ui->widget->graph(0)->addData(kni, -65);
-                    setTable(1,0,Targets[i]);
+                    setTable(0,9,Targets[i]);
                 }
             }
             else if(Targets[i].W9.TipPomehi == 7)
@@ -285,12 +390,12 @@ void Tsap::slot_addingSignalsToPlot(QVector<_SignalParam_formular> Targets)
                 if(!Targets[i].W2.semisphere)
                 {
                     ui->widget->graph(1)->addData(is, 65);
-                    setTable(0,1,Targets[i]);
+                    setTable(1,1,Targets[i]);
                 }
                 else
                 {
                     ui->widget->graph(1)->addData(is, -65);
-                    setTable(1,1,Targets[i]);
+                    setTable(1,9,Targets[i]);
                 }
             }
             else
@@ -298,12 +403,12 @@ void Tsap::slot_addingSignalsToPlot(QVector<_SignalParam_formular> Targets)
                 if(!Targets[i].W2.semisphere)
                 {
                     ui->widget->graph(2)->addData(other, 65);
-                    setTable(0,2,Targets[i]);
+                    setTable(2,1,Targets[i]);
                 }
                 else
                 {
                     ui->widget->graph(2)->addData(other, -65);
-                    setTable(1,2,Targets[i]);
+                    setTable(2,9,Targets[i]);
                 }
             }
             break;
@@ -313,12 +418,12 @@ void Tsap::slot_addingSignalsToPlot(QVector<_SignalParam_formular> Targets)
                 if(!Targets[i].W2.semisphere)
                 {
                     ui->widget->graph(0)->addData(kni, 55);
-                    setTable(0,0,Targets[i]);
+                    setTable(0,2,Targets[i]);
                 }
                 else
                 {
                     ui->widget->graph(0)->addData(kni, -55);
-                    setTable(1,0,Targets[i]);
+                    setTable(0,10,Targets[i]);
                 }
             }
             else if(Targets[i].W9.TipPomehi == 7)
@@ -326,12 +431,12 @@ void Tsap::slot_addingSignalsToPlot(QVector<_SignalParam_formular> Targets)
                 if(!Targets[i].W2.semisphere)
                 {
                     ui->widget->graph(1)->addData(is, 55);
-                    setTable(0,1,Targets[i]);
+                    setTable(1,2,Targets[i]);
                 }
                 else
                 {
                     ui->widget->graph(1)->addData(is, -55);
-                    setTable(1,1,Targets[i]);
+                    setTable(1,10,Targets[i]);
                 }
             }
             else
@@ -339,12 +444,12 @@ void Tsap::slot_addingSignalsToPlot(QVector<_SignalParam_formular> Targets)
                 if(!Targets[i].W2.semisphere)
                 {
                     ui->widget->graph(2)->addData(other, 55);
-                    setTable(0,2,Targets[i]);
+                    setTable(2,2,Targets[i]);
                 }
                 else
                 {
                     ui->widget->graph(2)->addData(other, -55);
-                    setTable(1,2,Targets[i]);
+                    setTable(2,10,Targets[i]);
                 }
             }
             break;
@@ -354,12 +459,12 @@ void Tsap::slot_addingSignalsToPlot(QVector<_SignalParam_formular> Targets)
                 if(!Targets[i].W2.semisphere)
                 {
                     ui->widget->graph(0)->addData(kni, 45);
-                    setTable(0,0,Targets[i]);
+                    setTable(0,3,Targets[i]);
                 }
                 else
                 {
                     ui->widget->graph(0)->addData(kni, -45);
-                    setTable(1,0,Targets[i]);
+                    setTable(0,11,Targets[i]);
                 }
             }
             else if(Targets[i].W9.TipPomehi == 7)
@@ -367,12 +472,12 @@ void Tsap::slot_addingSignalsToPlot(QVector<_SignalParam_formular> Targets)
                 if(!Targets[i].W2.semisphere)
                 {
                     ui->widget->graph(1)->addData(is, 45);
-                    setTable(0,1,Targets[i]);
+                    setTable(1,3,Targets[i]);
                 }
                 else
                 {
                     ui->widget->graph(1)->addData(is, -45);
-                    setTable(1,1,Targets[i]);
+                    setTable(1,11,Targets[i]);
                 }
             }
             else
@@ -380,12 +485,12 @@ void Tsap::slot_addingSignalsToPlot(QVector<_SignalParam_formular> Targets)
                 if(!Targets[i].W2.semisphere)
                 {
                     ui->widget->graph(2)->addData(other, 45);
-                    setTable(0,2,Targets[i]);
+                    setTable(2,3,Targets[i]);
                 }
                 else
                 {
                     ui->widget->graph(2)->addData(other, -45);
-                    setTable(1,2,Targets[i]);
+                    setTable(2,11,Targets[i]);
                 }
             }
             break;
@@ -395,12 +500,12 @@ void Tsap::slot_addingSignalsToPlot(QVector<_SignalParam_formular> Targets)
                 if(!Targets[i].W2.semisphere)
                 {
                     ui->widget->graph(0)->addData(kni, 35);
-                    setTable(0,0,Targets[i]);
+                    setTable(0,4,Targets[i]);
                 }
                 else
                 {
                     ui->widget->graph(0)->addData(kni, -35);
-                    setTable(1,0,Targets[i]);
+                    setTable(0,12,Targets[i]);
                 }
             }
             else if(Targets[i].W9.TipPomehi == 7)
@@ -408,12 +513,12 @@ void Tsap::slot_addingSignalsToPlot(QVector<_SignalParam_formular> Targets)
                 if(!Targets[i].W2.semisphere)
                 {
                     ui->widget->graph(1)->addData(is, 35);
-                    setTable(0,1,Targets[i]);
+                    setTable(1,4,Targets[i]);
                 }
                 else
                 {
                     ui->widget->graph(1)->addData(is, -35);
-                    setTable(1,1,Targets[i]);
+                    setTable(1,12,Targets[i]);
                 }
             }
             else
@@ -421,12 +526,12 @@ void Tsap::slot_addingSignalsToPlot(QVector<_SignalParam_formular> Targets)
                 if(!Targets[i].W2.semisphere)
                 {
                     ui->widget->graph(2)->addData(other, 35);
-                    setTable(0,2,Targets[i]);
+                    setTable(2,4,Targets[i]);
                 }
                 else
                 {
                     ui->widget->graph(2)->addData(other, -35);
-                    setTable(1,2,Targets[i]);
+                    setTable(2,12,Targets[i]);
                 }
             }
             break;
@@ -436,12 +541,12 @@ void Tsap::slot_addingSignalsToPlot(QVector<_SignalParam_formular> Targets)
                 if(!Targets[i].W2.semisphere)
                 {
                     ui->widget->graph(0)->addData(kni, 25);
-                    setTable(0,0,Targets[i]);
+                    setTable(0,5,Targets[i]);
                 }
                 else
                 {
                     ui->widget->graph(0)->addData(kni, -25);
-                    setTable(1,0,Targets[i]);
+                    setTable(0,13,Targets[i]);
                 }
             }
             else if(Targets[i].W9.TipPomehi == 7)
@@ -449,12 +554,12 @@ void Tsap::slot_addingSignalsToPlot(QVector<_SignalParam_formular> Targets)
                 if(!Targets[i].W2.semisphere)
                 {
                     ui->widget->graph(1)->addData(is, 25);
-                    setTable(0,1,Targets[i]);
+                    setTable(1,5,Targets[i]);
                 }
                 else
                 {
                     ui->widget->graph(1)->addData(is, -25);
-                    setTable(1,1,Targets[i]);
+                    setTable(1,13,Targets[i]);
                 }
             }
             else
@@ -462,12 +567,12 @@ void Tsap::slot_addingSignalsToPlot(QVector<_SignalParam_formular> Targets)
                 if(!Targets[i].W2.semisphere)
                 {
                     ui->widget->graph(2)->addData(other, 25);
-                    setTable(0,2,Targets[i]);
+                    setTable(2,5,Targets[i]);
                 }
                 else
                 {
                     ui->widget->graph(2)->addData(other, -25);
-                    setTable(1,2,Targets[i]);
+                    setTable(2,13,Targets[i]);
                 }
             }
             break;
@@ -477,12 +582,12 @@ void Tsap::slot_addingSignalsToPlot(QVector<_SignalParam_formular> Targets)
                 if(!Targets[i].W2.semisphere)
                 {
                     ui->widget->graph(0)->addData(kni, 15);
-                    setTable(0,0,Targets[i]);
+                    setTable(0,6,Targets[i]);
                 }
                 else
                 {
                     ui->widget->graph(0)->addData(kni, -15);
-                    setTable(1,0,Targets[i]);
+                    setTable(0,14,Targets[i]);
                 }
             }
             else if(Targets[i].W9.TipPomehi == 7)
@@ -490,12 +595,12 @@ void Tsap::slot_addingSignalsToPlot(QVector<_SignalParam_formular> Targets)
                 if(!Targets[i].W2.semisphere)
                 {
                     ui->widget->graph(1)->addData(is, 15);
-                    setTable(0,1,Targets[i]);
+                    setTable(1,6,Targets[i]);
                 }
                 else
                 {
                     ui->widget->graph(1)->addData(is, -15);
-                    setTable(1,1,Targets[i]);
+                    setTable(1,14,Targets[i]);
                 }
             }
             else
@@ -503,12 +608,12 @@ void Tsap::slot_addingSignalsToPlot(QVector<_SignalParam_formular> Targets)
                 if(!Targets[i].W2.semisphere)
                 {
                     ui->widget->graph(2)->addData(other, 15);
-                    setTable(0,2,Targets[i]);
+                    setTable(2,6,Targets[i]);
                 }
                 else
                 {
                     ui->widget->graph(2)->addData(other, -15);
-                    setTable(1,2,Targets[i]);
+                    setTable(2,14,Targets[i]);
                 }
             }
             break;
@@ -518,12 +623,12 @@ void Tsap::slot_addingSignalsToPlot(QVector<_SignalParam_formular> Targets)
                 if(!Targets[i].W2.semisphere)
                 {
                     ui->widget->graph(0)->addData(kni, 5);
-                    setTable(0,0,Targets[i]);
+                    setTable(0,7,Targets[i]);
                 }
                 else
                 {
                     ui->widget->graph(0)->addData(kni, -5);
-                    setTable(1,0,Targets[i]);
+                    setTable(0,15,Targets[i]);
                 }
 
             }
@@ -532,12 +637,12 @@ void Tsap::slot_addingSignalsToPlot(QVector<_SignalParam_formular> Targets)
                 if(!Targets[i].W2.semisphere)
                 {
                     ui->widget->graph(1)->addData(is, 5);
-                    setTable(0,1,Targets[i]);
+                    setTable(1,7,Targets[i]);
                 }
                 else
                 {
                     ui->widget->graph(1)->addData(is, -5);
-                    setTable(1,1,Targets[i]);
+                    setTable(1,15,Targets[i]);
                 }
             }
             else
@@ -545,12 +650,12 @@ void Tsap::slot_addingSignalsToPlot(QVector<_SignalParam_formular> Targets)
                 if(!Targets[i].W2.semisphere)
                 {
                     ui->widget->graph(2)->addData(other, 5);
-                    setTable(0,2,Targets[i]);
+                    setTable(2,7,Targets[i]);
                 }
                 else
                 {
                     ui->widget->graph(2)->addData(other, -5);
-                    setTable(1,2,Targets[i]);
+                    setTable(2,15,Targets[i]);
                 }
             }
             break;
@@ -582,6 +687,7 @@ void Tsap::setTable(int col, int row, _SignalParam_formular Targets)
 
 QVector<_formularTargetsForTable> Tsap::getTable(int col, int row)
 {
+    /*
     QVector<_formularTargetsForTable> TempTargets;
     for(int i = 0; i < 2; ++i)
     {
@@ -595,8 +701,19 @@ QVector<_formularTargetsForTable> Tsap::getTable(int col, int row)
             // qDebug() << "Длит: " << Table[j][i].TargetsTable[j].Dlit;
             // qDebug() << "Период: " << Table[j][i].TargetsTable[j].Per;
         }
-    }
+    }*/
     return Table[row][col].TargetsTable;
+}
+
+void Tsap::eraseTargetTable()
+{
+    for(int i = 0; i < 16; i++)
+    {
+        for(int j = 0; j < 3; j++)
+        {
+            Table[i][j].TargetsTable.clear();
+        }
+    }
 }
 
 void Tsap::Slot_set_workingmode_from_mw(unsigned char value, unsigned short countTargetsPPS, unsigned short countTargetsZPS)

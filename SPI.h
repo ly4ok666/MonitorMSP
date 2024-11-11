@@ -37,7 +37,7 @@ typedef struct _SPI_Packet
 //	uint16_t nothing;
 } _SPI_Packet;
 #pragma pack(pop)
-//#define LOCALHOST1
+#define LOCALHOST1
 #ifdef LOCALHOST1
 #define TARGET_NUM 6//56
 #define startBit 0

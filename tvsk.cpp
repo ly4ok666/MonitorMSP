@@ -31,6 +31,7 @@ void tvsk::addRootVSKRes_formular(QString name,QString description, _VSKRes_form
         QBrush b (Qt::red); //можно было бы делигат добавить и как в кайф менять цвет но, позже
         itm->setForeground(0,b);
         itm->setForeground(1,b);
+        ui->Tvsk->expandItem( itm);
     }
     //ui->Ttargets_sap->addTopLevelItem(parent);
     if(!addToParent) return;
