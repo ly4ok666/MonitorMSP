@@ -33,6 +33,10 @@ MainWindow::MainWindow(QWidget *parent)
 {
     ui->setupUi(this);
     systemLogger::init();
+    globalTimer = new QTimer(this);
+    globalTimer->setInterval(100); // Задаем интервал таймера
+    connect(globalTimer, &QTimer::timeout, this, &MainWindow::GlobalTimeExpired);
+    globalTimer->start();
 
 //SocketHandler->getFormulars().getSAPStatus_Formular().W5.Visota; //удалить , а вообще перенести куда надо
 /*****************************************************
@@ -131,6 +135,7 @@ MainWindow::~MainWindow()
     MyTcpThread.wait();
     delete MyTcpSocket;
     delete ui;
+    delete globalTimer;
 }
 
 void MainWindow::set_statusCommands(unsigned char status)
@@ -213,6 +218,16 @@ void MainWindow::setVSK(unsigned char value)
         ui->PBsap->setEnabled(1);
         ui->PBprm_prd->setEnabled(1);
     }
+}
+
+void MainWindow::GlobalTimeExpired()
+{
+    unsigned DiscretteTime = 10000;
+    if(TimeisExpired(localTimers.GiveMeTheDataNow, DiscretteTime))
+    {
+        emit signal_write_to_msp(CONNECT);
+    }
+
 }
 
 void MainWindow::slot_choice_WriteFinished(unsigned char commands, unsigned char value)
@@ -338,13 +353,15 @@ void MainWindow::slot_unPacked(const QByteArray in)
     emit signal_writeTempData(FormularFrom306Mod->getSAPStatus_Formular(), FormularFrom306Mod->getTargets());
     emit signal_writeTempData_VSK(FormularFrom306Mod->getVSK_Formular());
  //тут нам нужен сигналы раскидать в сап и в риц пакетовые, если в сап , то передаём параметры сигнала и состояний станции, то в риц нужно скинуть вообще всё
-
-
+    QTime saveTime;
+    localTimers.GiveMeTheDataNow = saveTime.currentTime(); //сохраняю время последних данных
 }
 
 void MainWindow::on_PBwifi_clicked()
 {
-    MyTcpThread.start();
+    MyTcpThread.start(); //тут нужен флаг на всякий случай
+    //нужен таймер, если в течении 5 секунд небыло обновления информации, то отправить команду 4
+    //команда 4 - звучит как: дай данные которые есть у тебя, чиним недостоющие части сервера
 }
 
 void MainWindow::discardSocket()
@@ -367,3 +384,11 @@ void MainWindow::connectSocket()
     qDebug() << "Connect!";
 }
 
+unsigned MainWindow::TimeisExpired(QTime EventTime, unsigned DiscretteTime)
+{
+    QTime CurrentTime;
+    if (CurrentTime.currentTime() < (EventTime.addMSecs(DiscretteTime)))
+        return 0;
+    return 1;
+
+}

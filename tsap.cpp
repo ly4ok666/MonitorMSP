@@ -775,7 +775,7 @@ void Tsap::slot_addingSignalsToPlot(QVector<_SignalParam_formular> Targets)
     }
        // ui->widget->replot();
     eraseTargetTable();
-    //ui->tableWidget->clear();
+    ui->tableWidget->clear();
 
     int k = -1;
     float kni = 0.5, is = 1.5, other = 2.5;
@@ -1121,7 +1121,7 @@ void Tsap::slot_addingSignalsToPlot(QVector<_SignalParam_formular> Targets)
     }
     ui->widget->replot();
     setCellTable();
-    ui->tableWidget->update();
+    //ui->tableWidget->update();
 }
 
 

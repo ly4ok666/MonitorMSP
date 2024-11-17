@@ -38,19 +38,23 @@ typedef enum onetimecommands
     Other
 }onetimecommands;
 
-
+typedef struct
+{
+    QTime GiveMeTheDataNow;
+} _localTimers;
 class MainWindow : public QMainWindow
 {
     Q_OBJECT
 /*    bool VSK_Started; //???*/
 
 /*    void unPack(QByteArray input); //??*/
+
 public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
     void set_statusCommands(unsigned char);
     unsigned char get_statusCommands();
-
+    unsigned TimeisExpired(QTime EventTime, unsigned DiscretteTime);
 
 private:
     Tric *ric;
@@ -58,10 +62,11 @@ private:
     tvsk *vsk;
     bool WorkingState = false;
     StructFormularFrom306Mod *FormularFrom306Mod;
-    QTimer timer;
+    QTimer *globalTimer;
     unsigned char statusCommands;
     MyTcpsocket *MyTcpSocket;
     QThread MyTcpThread;
+    _localTimers localTimers;
 
 
 protected:
@@ -74,6 +79,7 @@ private slots:
     void connectSocket(); //обработка коннекта
     void setWorkingModeMSP(unsigned char);
     void setVSK(unsigned char);
+    void GlobalTimeExpired(); //Слот для обновления глобального времени
 
 public slots:
         void on_actionExit_triggered(); //слот для обработки сигнала от гуя (верхнй бар)
@@ -85,6 +91,8 @@ public slots:
 
         //слот распаковщик, пока на первое время просто распакую во что-то
         void slot_unPacked(const QByteArray);
+
+
 signals:
         //данный сигнал нужен для смены режима (ПРМ\ПРД) во вкладке САП
         //для него создан в sap слот: void Slot_set_workingmode_from_mw(bool);

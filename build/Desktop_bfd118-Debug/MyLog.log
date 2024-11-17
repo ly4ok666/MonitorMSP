@@ -1,176 +1,708 @@
-17-11-2024 02:23:36| Warning  | 0 | |  | QString::arg: Argument missing: "SAP" , 1
-17-11-2024 02:23:36| Warning  | 0 | |  | QString::arg: Argument missing: "RIC" , 2
-17-11-2024 02:23:36| Warning  | 0 | |  | QString::arg: Argument missing: "VSK" , 3
-17-11-2024 02:23:39| Debug    | 23 | ../../mytcpsocket.cpp| ConnectToMSP | Connecting...
-17-11-2024 02:23:39| Debug    | 39 | ../../mytcpsocket.cpp| connectSocket | Connect to MSP!!
-17-11-2024 02:23:39| Debug    | 367 | ../../mainwindow.cpp| connectSocket | Connect!
-17-11-2024 02:23:39| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
-17-11-2024 02:23:39| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
-17-11-2024 02:23:43| Debug    | 79 | ../../mytcpsocket.cpp| slot_read_to_msp | Read Data :  "}\x00\x00\x00\x88{\x00\x00\x1B\xFA\x80\xDF X\x00\x00""0\x8A\xF2\x1B\xA5#\x00\x00\xC8\x00\x00\x00\xA8""a\x00\x00\x80\x9B\xF2\x1B\xD2\x7F\x00\x00\x02\x8A\xF2\x1B\x00`\x00\x00\x00\x88\xF2\x1B\xF0\x7F\x00\x00\xD5\x1BKaP\x80\xED\xFF\x00\x80\xF2\x1B\x1E\x19\x00\x00\xD2\x8A\xF2\x1B\x02~\x00\x00\x00\xE0\xF2\x1B\x00x\x00\x00\xD0\xA2\xA1\xDF\xFD%\x00\x00\xC8\x80\xF2\x1B\xA8""a\x00\x00\x80\x9B\xF2\x1B\xD2\x7F\x00\x00\x02\x8A\xF2\x1B\x00`\x00\x00\x00\xE8\xB7\xBC\xD8y\x00\x00\xA5\xA3\x80\xDF\xC8\x00\x00\x00\xA8\xE1\x80\xDF\x80\x1B\x00\x00\x12\x99\xF2\x1B\x02~\x00\x00\x00\xE0\xF2\x1B\x00x\x00\x00\x00\x99\xF2\x1B\x00\x00\x00\x00\x00\x00\xC2\xDF\x00\x00\x00\x00\x00\x80\xFF\xFF\xC0\x7F\x00\x00\x00""4\xB7\xBC\x00\x00\x00\x00\x00\x88\xF2\x1B\xE0\x7F\x00\x00\x00\x00Ka\x00\x80\xED\xFF\x00\x80\xF6\xBB\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x80\xF2\x1B\x00x\x00\x00\xFF\xF7\x80\xDF\xBE_\x00\x00\xFD\xFB\x80\xDF\xDE_\x00\x00"
-17-11-2024 02:23:43| Debug    | 79 | ../../mytcpsocket.cpp| slot_read_to_msp | Read Data :  "}\x00\x00\x00\x88{\x00\x00\x1B\xFA\x80\xDF X\x00\x00""0\x8A\xF2\x1B\xA5#\x00\x00\xC8\x00\x00\x00\xA8""a\x00\x00\x80\x9B\xF2\x1B\xD2\x7F\x00\x00\x02\x8A\xF2\x1B\x00`\x00\x00\x00\x88\xF2\x1B\xF0\x7F\x00\x00\xD5\x1BKaP\x80\xED\xFF\x00\x80\xF2\x1B\x1E\x19\x00\x00\xD2\x8A\xF2\x1B\x02~\x00\x00\x00\xE0\xF2\x1B\x00x\x00\x00\xD0\xA2\xA1\xDF\xFD%\x00\x00\xC8\x80\xF2\x1B\xA8""a\x00\x00\x80\x9B\xF2\x1B\xD2\x7F\x00\x00\x02\x8A\xF2\x1B\x00`\x00\x00\x00\xE8\xB7\xBC\xD8y\x00\x00\xA5\xA3\x80\xDF\xC8\x00\x00\x00\xA8\xE1\x80\xDF\x80\x1B\x00\x00\x12\x99\xF2\x1B\x02~\x00\x00\x00\xE0\xF2\x1B\x00x\x00\x00\x00\x99\xF2\x1B\x00\x00\x00\x00\x00\x00\xC2\xDF\x00\x00\x00\x00\x00\x80\xFF\xFF\xC0\x7F\x00\x00\x00""4\xB7\xBC\x00\x00\x00\x00\x00\x88\xF2\x1B\xE0\x7F\x00\x00\x00\x00Ka\x00\x80\xED\xFF\x00\x80\xF6\xBB\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x80\xF2\x1B\x00x\x00\x00\xFF\xF7\x80\xDF\xBE_\x00\x00\xFD\xFB\x80\xDF\xDE_\x00\x00"
-17-11-2024 02:23:43| Debug    | 195 | ../../mainwindow.cpp| setWorkingModeMSP | ПРД
-17-11-2024 02:23:43| Debug    | 1286 | ../../tsap.cpp| Slot_set_workingmode_from_mw | value:  2
-17-11-2024 02:23:43| Debug    | 326 | ../../mainwindow.cpp| slot_unPacked | 5:  3
-17-11-2024 02:23:43| Debug    | 1185 | ../../tsap.cpp| setCellTable | зашли сюда 
-17-11-2024 02:23:43| Debug    | 1185 | ../../tsap.cpp| setCellTable | зашли сюда 
-17-11-2024 02:23:43| Debug    | 195 | ../../mainwindow.cpp| setWorkingModeMSP | ПРД
-17-11-2024 02:23:43| Debug    | 1286 | ../../tsap.cpp| Slot_set_workingmode_from_mw | value:  2
-17-11-2024 02:23:43| Debug    | 326 | ../../mainwindow.cpp| slot_unPacked | 5:  3
-17-11-2024 02:23:43| Debug    | 1185 | ../../tsap.cpp| setCellTable | зашли сюда 
-17-11-2024 02:23:43| Debug    | 1185 | ../../tsap.cpp| setCellTable | зашли сюда 
-17-11-2024 02:24:01| Debug    | 79 | ../../mytcpsocket.cpp| slot_read_to_msp | Read Data :  "}\x00\x00\x00\x88{\x00\x00\x1B\xFA\x80\xDF X\x00\x00""0\x8A\xF2\x1B\xA5#\x00\x00\xC8\x00\x00\x00\xA8""a\x00\x00\x80\x9B\xF2\x1B\xD2\x7F\x00\x00\x02\x8A\xF2\x1B\x00`\x00\x00\x00\x88\xF2\x1B\xF0\x7F\x00\x00\xD5\x1BKaP\x80\xED\xFF\x00\x80\xF2\x1B\x1E\x19\x00\x00\xD2\x8A\xF2\x1B\x02~\x00\x00\x00\xE0\xF2\x1B\x00x\x00\x00\xD0\xA2\xA1\xDF\xFD%\x00\x00\xC8\x80\xF2\x1B\xA8""a\x00\x00\x80\x9B\xF2\x1B\xD2\x7F\x00\x00\x02\x8A\xF2\x1B\x00`\x00\x00\x00\xE8\xB7\xBC\xD8y\x00\x00\xA5\xA3\x80\xDF\xC8\x00\x00\x00\xA8\xE1\x80\xDF\x80\x1B\x00\x00\x12\x99\xF2\x1B\x02~\x00\x00\x00\xE0\xF2\x1B\x00x\x00\x00\x00\x99\xF2\x1B\x00\x00\x00\x00\x00\x00\xC2\xDF\x00\x00\x00\x00\x00\x80\xFF\xFF\xC0\x7F\x00\x00\x00""4\xB7\xBC\x00\x00\x00\x00\x00\x88\xF2\x1B\xE0\x7F\x00\x00\x00\x00Ka\x00\x80\xED\xFF\x00\x80\xF6\xBB\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x80\xF2\x1B\x00x\x00\x00\xFF\xF7\x80\xDF\xBE_\x00\x00\xFD\xFB\x80\xDF\xDE_\x00\x00"
-17-11-2024 02:24:01| Debug    | 195 | ../../mainwindow.cpp| setWorkingModeMSP | ПРД
-17-11-2024 02:24:01| Debug    | 1286 | ../../tsap.cpp| Slot_set_workingmode_from_mw | value:  2
-17-11-2024 02:24:01| Debug    | 326 | ../../mainwindow.cpp| slot_unPacked | 5:  3
-17-11-2024 02:24:01| Debug    | 1185 | ../../tsap.cpp| setCellTable | зашли сюда 
-17-11-2024 02:24:01| Debug    | 1185 | ../../tsap.cpp| setCellTable | зашли сюда 
-17-11-2024 02:24:08| Debug    | 79 | ../../mytcpsocket.cpp| slot_read_to_msp | Read Data :  "}\x00\x00\x00\x88{\x00\x00\x1B\xFA\x80\xDF X\x00\x00""0\x8A\xF2\x1B\xA5#\x00\x00\xC8\x00\x00\x00\xA8""a\x00\x00\x80\x9B\xF2\x1B\xD2\x7F\x00\x00\x02\x8A\xF2\x1B\x00`\x00\x00\x00\x88\xF2\x1B\xF0\x7F\x00\x00\xD5\x1BKaP\x80\xED\xFF\x00\x80\xF2\x1B\x1E\x19\x00\x00\xD2\x8A\xF2\x1B\x02~\x00\x00\x00\xE0\xF2\x1B\x00x\x00\x00\xD0\xA2\xA1\xDF\xFD%\x00\x00\xC8\x80\xF2\x1B\xA8""a\x00\x00\x80\x9B\xF2\x1B\xD2\x7F\x00\x00\x02\x8A\xF2\x1B\x00`\x00\x00\x00\xE8\xB7\xBC\xD8y\x00\x00\xA5\xA3\x80\xDF\xC8\x00\x00\x00\xA8\xE1\x80\xDF\x80\x1B\x00\x00\x12\x99\xF2\x1B\x02~\x00\x00\x00\xE0\xF2\x1B\x00x\x00\x00\x00\x99\xF2\x1B\x00\x00\x00\x00\x00\x00\xC2\xDF\x00\x00\x00\x00\x00\x80\xFF\xFF\xC0\x7F\x00\x00\x00""4\xB7\xBC\x00\x00\x00\x00\x00\x88\xF2\x1B\xE0\x7F\x00\x00\x00\x00Ka\x00\x80\xED\xFF\x00\x80\xF6\xBB\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x80\xF2\x1B\x00x\x00\x00\xFF\xF7\x80\xDF\xBE_\x00\x00\xFD\xFB\x80\xDF\xDE_\x00\x00"
-17-11-2024 02:24:08| Debug    | 195 | ../../mainwindow.cpp| setWorkingModeMSP | ПРД
-17-11-2024 02:24:08| Debug    | 1286 | ../../tsap.cpp| Slot_set_workingmode_from_mw | value:  2
-17-11-2024 02:24:08| Debug    | 326 | ../../mainwindow.cpp| slot_unPacked | 5:  3
-17-11-2024 02:24:08| Debug    | 1185 | ../../tsap.cpp| setCellTable | зашли сюда 
-17-11-2024 02:24:08| Debug    | 1185 | ../../tsap.cpp| setCellTable | зашли сюда 
-17-11-2024 02:24:09| Debug    | 79 | ../../mytcpsocket.cpp| slot_read_to_msp | Read Data :  "}\x00\x00\x00\x88{\x00\x00\x1B\xFA\x80\xDF X\x00\x00""0\x8A\xF2\x1B\xA5#\x00\x00\xC8\x00\x00\x00\xA8""a\x00\x00\x80\x9B\xF2\x1B\xD2\x7F\x00\x00\x02\x8A\xF2\x1B\x00`\x00\x00\x00\x88\xF2\x1B\xF0\x7F\x00\x00\xD5\x1BKaP\x80\xED\xFF\x00\x80\xF2\x1B\x1E\x19\x00\x00\xD2\x8A\xF2\x1B\x02~\x00\x00\x00\xE0\xF2\x1B\x00x\x00\x00\xD0\xA2\xA1\xDF\xFD%\x00\x00\xC8\x80\xF2\x1B\xA8""a\x00\x00\x80\x9B\xF2\x1B\xD2\x7F\x00\x00\x02\x8A\xF2\x1B\x00`\x00\x00\x00\xE8\xB7\xBC\xD8y\x00\x00\xA5\xA3\x80\xDF\xC8\x00\x00\x00\xA8\xE1\x80\xDF\x80\x1B\x00\x00\x12\x99\xF2\x1B\x02~\x00\x00\x00\xE0\xF2\x1B\x00x\x00\x00\x00\x99\xF2\x1B\x00\x00\x00\x00\x00\x00\xC2\xDF\x00\x00\x00\x00\x00\x80\xFF\xFF\xC0\x7F\x00\x00\x00""4\xB7\xBC\x00\x00\x00\x00\x00\x88\xF2\x1B\xE0\x7F\x00\x00\x00\x00Ka\x00\x80\xED\xFF\x00\x80\xF6\xBB\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x80\xF2\x1B\x00x\x00\x00\xFF\xF7\x80\xDF\xBE_\x00\x00\xFD\xFB\x80\xDF\xDE_\x00\x00"
-17-11-2024 02:24:09| Debug    | 195 | ../../mainwindow.cpp| setWorkingModeMSP | ПРД
-17-11-2024 02:24:09| Debug    | 1286 | ../../tsap.cpp| Slot_set_workingmode_from_mw | value:  2
-17-11-2024 02:24:09| Debug    | 326 | ../../mainwindow.cpp| slot_unPacked | 5:  3
-17-11-2024 02:24:09| Debug    | 1185 | ../../tsap.cpp| setCellTable | зашли сюда 
-17-11-2024 02:24:09| Debug    | 1185 | ../../tsap.cpp| setCellTable | зашли сюда 
-17-11-2024 02:24:10| Debug    | 79 | ../../mytcpsocket.cpp| slot_read_to_msp | Read Data :  "}\x00\x00\x00\x88{\x00\x00\x1B\xFA\x80\xDF X\x00\x00""0\x8A\xF2\x1B\xA5#\x00\x00\xC8\x00\x00\x00\xA8""a\x00\x00\x80\x9B\xF2\x1B\xD2\x7F\x00\x00\x02\x8A\xF2\x1B\x00`\x00\x00\x00\x88\xF2\x1B\xF0\x7F\x00\x00\xD5\x1BKaP\x80\xED\xFF\x00\x80\xF2\x1B\x1E\x19\x00\x00\xD2\x8A\xF2\x1B\x02~\x00\x00\x00\xE0\xF2\x1B\x00x\x00\x00\xD0\xA2\xA1\xDF\xFD%\x00\x00\xC8\x80\xF2\x1B\xA8""a\x00\x00\x80\x9B\xF2\x1B\xD2\x7F\x00\x00\x02\x8A\xF2\x1B\x00`\x00\x00\x00\xE8\xB7\xBC\xD8y\x00\x00\xA5\xA3\x80\xDF\xC8\x00\x00\x00\xA8\xE1\x80\xDF\x80\x1B\x00\x00\x12\x99\xF2\x1B\x02~\x00\x00\x00\xE0\xF2\x1B\x00x\x00\x00\x00\x99\xF2\x1B\x00\x00\x00\x00\x00\x00\xC2\xDF\x00\x00\x00\x00\x00\x80\xFF\xFF\xC0\x7F\x00\x00\x00""4\xB7\xBC\x00\x00\x00\x00\x00\x88\xF2\x1B\xE0\x7F\x00\x00\x00\x00Ka\x00\x80\xED\xFF\x00\x80\xF6\xBB\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x80\xF2\x1B\x00x\x00\x00\xFF\xF7\x80\xDF\xBE_\x00\x00\xFD\xFB\x80\xDF\xDE_\x00\x00"
-17-11-2024 02:24:10| Debug    | 195 | ../../mainwindow.cpp| setWorkingModeMSP | ПРД
-17-11-2024 02:24:10| Debug    | 1286 | ../../tsap.cpp| Slot_set_workingmode_from_mw | value:  2
-17-11-2024 02:24:10| Debug    | 326 | ../../mainwindow.cpp| slot_unPacked | 5:  3
-17-11-2024 02:24:10| Debug    | 1185 | ../../tsap.cpp| setCellTable | зашли сюда 
-17-11-2024 02:24:10| Debug    | 1185 | ../../tsap.cpp| setCellTable | зашли сюда 
-17-11-2024 02:24:10| Debug    | 79 | ../../mytcpsocket.cpp| slot_read_to_msp | Read Data :  "}\x00\x00\x00\x88{\x00\x00\x1B\xFA\x80\xDF X\x00\x00""0\x8A\xF2\x1B\xA5#\x00\x00\xC8\x00\x00\x00\xA8""a\x00\x00\x80\x9B\xF2\x1B\xD2\x7F\x00\x00\x02\x8A\xF2\x1B\x00`\x00\x00\x00\x88\xF2\x1B\xF0\x7F\x00\x00\xD5\x1BKaP\x80\xED\xFF\x00\x80\xF2\x1B\x1E\x19\x00\x00\xD2\x8A\xF2\x1B\x02~\x00\x00\x00\xE0\xF2\x1B\x00x\x00\x00\xD0\xA2\xA1\xDF\xFD%\x00\x00\xC8\x80\xF2\x1B\xA8""a\x00\x00\x80\x9B\xF2\x1B\xD2\x7F\x00\x00\x02\x8A\xF2\x1B\x00`\x00\x00\x00\xE8\xB7\xBC\xD8y\x00\x00\xA5\xA3\x80\xDF\xC8\x00\x00\x00\xA8\xE1\x80\xDF\x80\x1B\x00\x00\x12\x99\xF2\x1B\x02~\x00\x00\x00\xE0\xF2\x1B\x00x\x00\x00\x00\x99\xF2\x1B\x00\x00\x00\x00\x00\x00\xC2\xDF\x00\x00\x00\x00\x00\x80\xFF\xFF\xC0\x7F\x00\x00\x00""4\xB7\xBC\x00\x00\x00\x00\x00\x88\xF2\x1B\xE0\x7F\x00\x00\x00\x00Ka\x00\x80\xED\xFF\x00\x80\xF6\xBB\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x80\xF2\x1B\x00x\x00\x00\xFF\xF7\x80\xDF\xBE_\x00\x00\xFD\xFB\x80\xDF\xDE_\x00\x00"
-17-11-2024 02:24:10| Debug    | 195 | ../../mainwindow.cpp| setWorkingModeMSP | ПРД
-17-11-2024 02:24:10| Debug    | 1286 | ../../tsap.cpp| Slot_set_workingmode_from_mw | value:  2
-17-11-2024 02:24:10| Debug    | 326 | ../../mainwindow.cpp| slot_unPacked | 5:  3
-17-11-2024 02:24:10| Debug    | 1185 | ../../tsap.cpp| setCellTable | зашли сюда 
-17-11-2024 02:24:10| Debug    | 1185 | ../../tsap.cpp| setCellTable | зашли сюда 
-17-11-2024 02:24:10| Debug    | 79 | ../../mytcpsocket.cpp| slot_read_to_msp | Read Data :  "}\x00\x00\x00\x88{\x00\x00\x1B\xFA\x80\xDF X\x00\x00""0\x8A\xF2\x1B\xA5#\x00\x00\xC8\x00\x00\x00\xA8""a\x00\x00\x80\x9B\xF2\x1B\xD2\x7F\x00\x00\x02\x8A\xF2\x1B\x00`\x00\x00\x00\x88\xF2\x1B\xF0\x7F\x00\x00\xD5\x1BKaP\x80\xED\xFF\x00\x80\xF2\x1B\x1E\x19\x00\x00\xD2\x8A\xF2\x1B\x02~\x00\x00\x00\xE0\xF2\x1B\x00x\x00\x00\xD0\xA2\xA1\xDF\xFD%\x00\x00\xC8\x80\xF2\x1B\xA8""a\x00\x00\x80\x9B\xF2\x1B\xD2\x7F\x00\x00\x02\x8A\xF2\x1B\x00`\x00\x00\x00\xE8\xB7\xBC\xD8y\x00\x00\xA5\xA3\x80\xDF\xC8\x00\x00\x00\xA8\xE1\x80\xDF\x80\x1B\x00\x00\x12\x99\xF2\x1B\x02~\x00\x00\x00\xE0\xF2\x1B\x00x\x00\x00\x00\x99\xF2\x1B\x00\x00\x00\x00\x00\x00\xC2\xDF\x00\x00\x00\x00\x00\x80\xFF\xFF\xC0\x7F\x00\x00\x00""4\xB7\xBC\x00\x00\x00\x00\x00\x88\xF2\x1B\xE0\x7F\x00\x00\x00\x00Ka\x00\x80\xED\xFF\x00\x80\xF6\xBB\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x80\xF2\x1B\x00x\x00\x00\xFF\xF7\x80\xDF\xBE_\x00\x00\xFD\xFB\x80\xDF\xDE_\x00\x00"
-17-11-2024 02:24:10| Debug    | 195 | ../../mainwindow.cpp| setWorkingModeMSP | ПРД
-17-11-2024 02:24:10| Debug    | 1286 | ../../tsap.cpp| Slot_set_workingmode_from_mw | value:  2
-17-11-2024 02:24:10| Debug    | 326 | ../../mainwindow.cpp| slot_unPacked | 5:  3
-17-11-2024 02:24:10| Debug    | 1185 | ../../tsap.cpp| setCellTable | зашли сюда 
-17-11-2024 02:24:10| Debug    | 1185 | ../../tsap.cpp| setCellTable | зашли сюда 
-17-11-2024 02:24:10| Debug    | 79 | ../../mytcpsocket.cpp| slot_read_to_msp | Read Data :  "}\x00\x00\x00\x88{\x00\x00\x1B\xFA\x80\xDF X\x00\x00""0\x8A\xF2\x1B\xA5#\x00\x00\xC8\x00\x00\x00\xA8""a\x00\x00\x80\x9B\xF2\x1B\xD2\x7F\x00\x00\x02\x8A\xF2\x1B\x00`\x00\x00\x00\x88\xF2\x1B\xF0\x7F\x00\x00\xD5\x1BKaP\x80\xED\xFF\x00\x80\xF2\x1B\x1E\x19\x00\x00\xD2\x8A\xF2\x1B\x02~\x00\x00\x00\xE0\xF2\x1B\x00x\x00\x00\xD0\xA2\xA1\xDF\xFD%\x00\x00\xC8\x80\xF2\x1B\xA8""a\x00\x00\x80\x9B\xF2\x1B\xD2\x7F\x00\x00\x02\x8A\xF2\x1B\x00`\x00\x00\x00\xE8\xB7\xBC\xD8y\x00\x00\xA5\xA3\x80\xDF\xC8\x00\x00\x00\xA8\xE1\x80\xDF\x80\x1B\x00\x00\x12\x99\xF2\x1B\x02~\x00\x00\x00\xE0\xF2\x1B\x00x\x00\x00\x00\x99\xF2\x1B\x00\x00\x00\x00\x00\x00\xC2\xDF\x00\x00\x00\x00\x00\x80\xFF\xFF\xC0\x7F\x00\x00\x00""4\xB7\xBC\x00\x00\x00\x00\x00\x88\xF2\x1B\xE0\x7F\x00\x00\x00\x00Ka\x00\x80\xED\xFF\x00\x80\xF6\xBB\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x80\xF2\x1B\x00x\x00\x00\xFF\xF7\x80\xDF\xBE_\x00\x00\xFD\xFB\x80\xDF\xDE_\x00\x00"
-17-11-2024 02:24:10| Debug    | 195 | ../../mainwindow.cpp| setWorkingModeMSP | ПРД
-17-11-2024 02:24:10| Debug    | 79 | ../../mytcpsocket.cpp| slot_read_to_msp | Read Data :  "}\x00\x00\x00\x88{\x00\x00\x1B\xFA\x80\xDF X\x00\x00""0\x8A\xF2\x1B\xA5#\x00\x00\xC8\x00\x00\x00\xA8""a\x00\x00\x80\x9B\xF2\x1B\xD2\x7F\x00\x00\x02\x8A\xF2\x1B\x00`\x00\x00\x00\x88\xF2\x1B\xF0\x7F\x00\x00\xD5\x1BKaP\x80\xED\xFF\x00\x80\xF2\x1B\x1E\x19\x00\x00\xD2\x8A\xF2\x1B\x02~\x00\x00\x00\xE0\xF2\x1B\x00x\x00\x00\xD0\xA2\xA1\xDF\xFD%\x00\x00\xC8\x80\xF2\x1B\xA8""a\x00\x00\x80\x9B\xF2\x1B\xD2\x7F\x00\x00\x02\x8A\xF2\x1B\x00`\x00\x00\x00\xE8\xB7\xBC\xD8y\x00\x00\xA5\xA3\x80\xDF\xC8\x00\x00\x00\xA8\xE1\x80\xDF\x80\x1B\x00\x00\x12\x99\xF2\x1B\x02~\x00\x00\x00\xE0\xF2\x1B\x00x\x00\x00\x00\x99\xF2\x1B\x00\x00\x00\x00\x00\x00\xC2\xDF\x00\x00\x00\x00\x00\x80\xFF\xFF\xC0\x7F\x00\x00\x00""4\xB7\xBC\x00\x00\x00\x00\x00\x88\xF2\x1B\xE0\x7F\x00\x00\x00\x00Ka\x00\x80\xED\xFF\x00\x80\xF6\xBB\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x80\xF2\x1B\x00x\x00\x00\xFF\xF7\x80\xDF\xBE_\x00\x00\xFD\xFB\x80\xDF\xDE_\x00\x00"
-17-11-2024 02:24:10| Debug    | 1286 | ../../tsap.cpp| Slot_set_workingmode_from_mw | value:  2
-17-11-2024 02:24:10| Debug    | 326 | ../../mainwindow.cpp| slot_unPacked | 5:  3
-17-11-2024 02:24:10| Debug    | 1185 | ../../tsap.cpp| setCellTable | зашли сюда 
-17-11-2024 02:24:10| Debug    | 1185 | ../../tsap.cpp| setCellTable | зашли сюда 
-17-11-2024 02:24:10| Debug    | 195 | ../../mainwindow.cpp| setWorkingModeMSP | ПРД
-17-11-2024 02:24:10| Debug    | 1286 | ../../tsap.cpp| Slot_set_workingmode_from_mw | value:  2
-17-11-2024 02:24:10| Debug    | 326 | ../../mainwindow.cpp| slot_unPacked | 5:  3
-17-11-2024 02:24:10| Debug    | 1185 | ../../tsap.cpp| setCellTable | зашли сюда 
-17-11-2024 02:24:10| Debug    | 1185 | ../../tsap.cpp| setCellTable | зашли сюда 
-17-11-2024 02:24:50| Debug    | 46 | ../../mytcpsocket.cpp| discardSocket | Disconnect from MSP!!
-17-11-2024 02:24:50| Debug    | 358 | ../../mainwindow.cpp| discardSocket | Disconnect!
-17-11-2024 02:24:58| Debug    | 23 | ../../mytcpsocket.cpp| ConnectToMSP | Connecting...
-17-11-2024 02:24:58| Debug    | 39 | ../../mytcpsocket.cpp| connectSocket | Connect to MSP!!
-17-11-2024 02:24:58| Debug    | 367 | ../../mainwindow.cpp| connectSocket | Connect!
-17-11-2024 02:24:58| Debug    | 367 | ../../mainwindow.cpp| connectSocket | Connect!
-17-11-2024 02:24:58| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:18| Warning  | 0 | |  | QString::arg: Argument missing: "SAP" , 1
+18-11-2024 01:39:18| Warning  | 0 | |  | QString::arg: Argument missing: "RIC" , 2
+18-11-2024 01:39:18| Warning  | 0 | |  | QString::arg: Argument missing: "VSK" , 3
+18-11-2024 01:39:21| Debug    | 23 | ../../mytcpsocket.cpp| ConnectToMSP | Connecting...
+18-11-2024 01:39:21| Debug    | 39 | ../../mytcpsocket.cpp| connectSocket | Connect to MSP!!
+18-11-2024 01:39:21| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:21| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:21| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:21| Debug    | 384 | ../../mainwindow.cpp| connectSocket | Connect!
+18-11-2024 01:39:21| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:21| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:21| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:21| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:21| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:21| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:21| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:21| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:21| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:21| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:21| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:21| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:21| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:21| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:21| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:21| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:21| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:21| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:21| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:21| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:21| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:21| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:21| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:21| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:21| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:21| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:21| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:21| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:21| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:21| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:21| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:21| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:21| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:21| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:21| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:21| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:21| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:21| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:21| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:21| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:21| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:21| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:21| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:21| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:21| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:21| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:21| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:21| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:21| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:21| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:21| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:21| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:21| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:21| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:21| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:21| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:21| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:21| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:21| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:21| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:21| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:21| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:21| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:21| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:21| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:21| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:21| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:21| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:21| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:22| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:22| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:22| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:22| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:22| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:22| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:22| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:22| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:22| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:22| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:22| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:22| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:22| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:22| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:22| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:22| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:22| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:22| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:22| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:22| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:23| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:23| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:23| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:23| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:23| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:23| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:23| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:23| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:23| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:23| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:23| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:23| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:23| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:23| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:23| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:23| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:23| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:23| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:23| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:23| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:24| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:24| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:24| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:24| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:24| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:24| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:24| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:24| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:24| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:24| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:24| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:24| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:24| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:24| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:24| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:24| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:24| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:24| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:24| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:24| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:25| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:25| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:25| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:25| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:25| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:25| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:25| Debug    | 79 | ../../mytcpsocket.cpp| slot_read_to_msp | Read Data :  "}\x00\x00\x00\x89{\x00\x00\x1B\xFA\xC5\x0E `\x00\x00\x10P~\x0B\xA5#\x00\x00\xC8\x00\x00\x00\xA8""a\x00\x00\x80\x1B~\x0B\xD2\x7F\x00\x00\x02P~\x0B\x00`\x00\x00\x00H~\x0B\xF0\x7F\x00\x00\xD5\x9B\x16""4P\x00i\xCA\x00\x00~\x0B\x1E\x19\x00\x00\x92P~\x0B\x02~\x00\x00\x00`~\x0B\x00x\x00\x00\xD0\xBD\xE6\x0E\xFD%\x00\x00\xC8\x00~\x0B\xA8""a\x00\x00\x80\x1B~\x0B\xD2\x7F\x00\x00\x02P~\x0B\x00`\x00\x00\x00\xE8\xB7Q8v\x00\x00\xA5\xA3\xC5\x0E\xC8\x00\x00\x00\xA8\xE1\xC5\x0E\x80\x1B\x00\x00\x12\x00\x00\x00\x02\x00\x00\x00\x00`\x00\x00\x00\x00\x00\x00\xF0^~\x0B\x85""9\x00\x00\xC8\x80\x01\x0F\xA8""a\x00\x00\x80\x9B\xFF\xFF\xD2\x7F\x00\x00\x02\x1C""eQ\x00`\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x80\x16""4\x00\x00i\xCA\x00\x80\xF6P\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00~\x0B\x00x\x00\x00\xFF\xF7\xC5\x0E\xBEo\x00\x00\xFD\xFB\xC5\x0E\xDEg\x00\x00"
+18-11-2024 01:39:25| Debug    | 79 | ../../mytcpsocket.cpp| slot_read_to_msp | Read Data :  "}\x00\x00\x00\x89{\x00\x00\x1B\xFA\xC5\x0E `\x00\x00\x10P~\x0B\xA5#\x00\x00\xC8\x00\x00\x00\xA8""a\x00\x00\x80\x1B~\x0B\xD2\x7F\x00\x00\x02P~\x0B\x00`\x00\x00\x00H~\x0B\xF0\x7F\x00\x00\xD5\x9B\x16""4P\x00i\xCA\x00\x00~\x0B\x1E\x19\x00\x00\x92P~\x0B\x02~\x00\x00\x00`~\x0B\x00x\x00\x00\xD0\xBD\xE6\x0E\xFD%\x00\x00\xC8\x00~\x0B\xA8""a\x00\x00\x80\x1B~\x0B\xD2\x7F\x00\x00\x02P~\x0B\x00`\x00\x00\x00\xE8\xB7Q8v\x00\x00\xA5\xA3\xC5\x0E\xC8\x00\x00\x00\xA8\xE1\xC5\x0E\x80\x1B\x00\x00\x12\x00\x00\x00\x02\x00\x00\x00\x00`\x00\x00\x00\x00\x00\x00\xF0^~\x0B\x85""9\x00\x00\xC8\x80\x01\x0F\xA8""a\x00\x00\x80\x9B\xFF\xFF\xD2\x7F\x00\x00\x02\x1C""eQ\x00`\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x80\x16""4\x00\x00i\xCA\x00\x80\xF6P\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00~\x0B\x00x\x00\x00\xFF\xF7\xC5\x0E\xBEo\x00\x00\xFD\xFB\xC5\x0E\xDEg\x00\x00"
+18-11-2024 01:39:25| Debug    | 200 | ../../mainwindow.cpp| setWorkingModeMSP | ПРД
+18-11-2024 01:39:25| Debug    | 1286 | ../../tsap.cpp| Slot_set_workingmode_from_mw | value:  2
+18-11-2024 01:39:25| Debug    | 341 | ../../mainwindow.cpp| slot_unPacked | 5:  3
+18-11-2024 01:39:25| Debug    | 1185 | ../../tsap.cpp| setCellTable | зашли сюда 
+18-11-2024 01:39:25| Debug    | 1185 | ../../tsap.cpp| setCellTable | зашли сюда 
+18-11-2024 01:39:25| Debug    | 200 | ../../mainwindow.cpp| setWorkingModeMSP | ПРД
+18-11-2024 01:39:25| Debug    | 1286 | ../../tsap.cpp| Slot_set_workingmode_from_mw | value:  2
+18-11-2024 01:39:25| Debug    | 341 | ../../mainwindow.cpp| slot_unPacked | 5:  3
+18-11-2024 01:39:25| Debug    | 1185 | ../../tsap.cpp| setCellTable | зашли сюда 
+18-11-2024 01:39:25| Debug    | 1185 | ../../tsap.cpp| setCellTable | зашли сюда 
+18-11-2024 01:39:35| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:35| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:35| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:35| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:35| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:35| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:35| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:35| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:35| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:35| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:35| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:35| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:35| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:35| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:36| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:36| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:36| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:36| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:36| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:36| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:36| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:36| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:36| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:36| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:36| Debug    | 46 | ../../mytcpsocket.cpp| discardSocket | Disconnect from MSP!!
+18-11-2024 01:39:36| Debug    | 375 | ../../mainwindow.cpp| discardSocket | Disconnect!
+18-11-2024 01:39:51| Debug    | 23 | ../../mytcpsocket.cpp| ConnectToMSP | Connecting...
+18-11-2024 01:39:51| Debug    | 39 | ../../mytcpsocket.cpp| connectSocket | Connect to MSP!!
+18-11-2024 01:39:51| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:51| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:51| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:51| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:51| Debug    | 384 | ../../mainwindow.cpp| connectSocket | Connect!
+18-11-2024 01:39:51| Debug    | 384 | ../../mainwindow.cpp| connectSocket | Connect!
+18-11-2024 01:39:51| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
 �даваемые данные:  "\x04\x00\x00\x80"
-17-11-2024 02:25:02| Debug    | 79 | ../../mytcpsocket.cpp| slot_read_to_msp | Read Data :  "}\x00\x00\x00\x89{\x00\x00\x1Bz\xBD\xFE d\x00\x00p\xD0U\xCA\xA5#\x00\x00\xC8\x00\x00\x00\xA8""a\x00\x00\x80\x9BU\xCA\xD2\x7F\x00\x00\x02\xD0U\xCA\x00`\x00\x00\x00\xD0U\xCA\xF0\x7F\x00\x00\xD5\x1B\x86""DP\x80\x8BN\x00\x80U\xCA\x1E\x19\x00\x00\x12\xD1U\xCA\x02~\x00\x00\x00\xE0U\xCA\x00x\x00\x00P\f\xDE\xFE\xFD%\x00\x00\xC8\x80U\xCA\xA8""a\x00\x00\x80\x9BU\xCA\xD2\x7F\x00\x00\x02\xD0U\xCA\x00`\x00\x00\x00\xE8\x17\xFA\xB8}\x00\x00\xA5#\xBD\xFE\xC8\x00\x00\x00\xA8""a\xBD\xFE\x80\x1B\x00\x00\x12\xDFU\xCA\x02~\x00\x00\x00\xE0U\xCA\x00x\x00\x00@\xDFU\xCA\x00\x00\x00\x00\x00\x80\xDB\xFE\x00\x00\x00\x00\x00\x80\xFF\xFF\xC0\x7F\x00\x00\x00""4\x17\xFA\x00\x00\x00\x00\x00\xD0U\xCA\xE0\x7F\x00\x00\x00\x00\x86""D\x00\x80\x8BN\x00\x80V\xF9\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x80U\xCA\x00x\x00\x00\xFFw\xBD\xFE\xBEo\x00\x00\xFD{\xBD\xFE\xDEg\x00\x00"
-17-11-2024 02:25:02| Debug    | 79 | ../../mytcpsocket.cpp| slot_read_to_msp | Read Data :  "}\x00\x00\x00\x89{\x00\x00\x1Bz\xBD\xFE d\x00\x00p\xD0U\xCA\xA5#\x00\x00\xC8\x00\x00\x00\xA8""a\x00\x00\x80\x9BU\xCA\xD2\x7F\x00\x00\x02\xD0U\xCA\x00`\x00\x00\x00\xD0U\xCA\xF0\x7F\x00\x00\xD5\x1B\x86""DP\x80\x8BN\x00\x80U\xCA\x1E\x19\x00\x00\x12\xD1U\xCA\x02~\x00\x00\x00\xE0U\xCA\x00x\x00\x00P\f\xDE\xFE\xFD%\x00\x00\xC8\x80U\xCA\xA8""a\x00\x00\x80\x9BU\xCA\xD2\x7F\x00\x00\x02\xD0U\xCA\x00`\x00\x00\x00\xE8\x17\xFA\xB8}\x00\x00\xA5#\xBD\xFE\xC8\x00\x00\x00\xA8""a\xBD\xFE\x80\x1B\x00\x00\x12\xDFU\xCA\x02~\x00\x00\x00\xE0U\xCA\x00x\x00\x00@\xDFU\xCA\x00\x00\x00\x00\x00\x80\xDB\xFE\x00\x00\x00\x00\x00\x80\xFF\xFF\xC0\x7F\x00\x00\x00""4\x17\xFA\x00\x00\x00\x00\x00\xD0U\xCA\xE0\x7F\x00\x00\x00\x00\x86""D\x00\x80\x8BN\x00\x80V\xF9\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x80U\xCA\x00x\x00\x00\xFFw\xBD\xFE\xBEo\x00\x00\xFD{\xBD\xFE\xDEg\x00\x00"
-17-11-2024 02:25:02| Debug    | 195 | ../../mainwindow.cpp| setWorkingModeMSP | ПРД
-17-11-2024 02:25:02| Debug    | 1286 | ../../tsap.cpp| Slot_set_workingmode_from_mw | value:  2
-17-11-2024 02:25:02| Debug    | 326 | ../../mainwindow.cpp| slot_unPacked | 5:  3
-17-11-2024 02:25:02| Debug    | 1185 | ../../tsap.cpp| setCellTable | зашли сюда 
-17-11-2024 02:25:02| Debug    | 1185 | ../../tsap.cpp| setCellTable | зашли сюда 
-17-11-2024 02:25:02| Debug    | 195 | ../../mainwindow.cpp| setWorkingModeMSP | ПРД
-17-11-2024 02:25:02| Debug    | 1286 | ../../tsap.cpp| Slot_set_workingmode_from_mw | value:  2
-17-11-2024 02:25:02| Debug    | 326 | ../../mainwindow.cpp| slot_unPacked | 5:  3
-17-11-2024 02:25:02| Debug    | 1185 | ../../tsap.cpp| setCellTable | зашли сюда 
-17-11-2024 02:25:02| Debug    | 1185 | ../../tsap.cpp| setCellTable | зашли сюда 
-17-11-2024 02:26:32| Debug    | 46 | ../../mytcpsocket.cpp| discardSocket | Disconnect from MSP!!
-17-11-2024 02:26:32| Debug    | 358 | ../../mainwindow.cpp| discardSocket | Disconnect!
-17-11-2024 02:26:45| Debug    | 23 | ../../mytcpsocket.cpp| ConnectToMSP | Connecting...
-17-11-2024 02:26:45| Debug    | 39 | ../../mytcpsocket.cpp| connectSocket | Connect to MSP!!
-17-11-2024 02:26:45| Debug    | 367 | ../../mainwindow.cpp| connectSocket | Connect!
-17-11-2024 02:26:45| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
-17-11-2024 02:26:45| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
-17-11-2024 02:26:47| Debug    | 79 | ../../mytcpsocket.cpp| slot_read_to_msp | Read Data :  "}\x00\x00\x00\x88{\x00\x00\x1Bzq\x89 X\x00\x00P\x03\xEER\xA5#\x00\x00\xC8\x00\x00\x00\xA8""a\x00\x00\x80\x1B\xEER\xD2\x7F\x00\x00\x02\x02\xEER\x00`\x00\x00\x00\x00\xEER\xF0\x7F\x00\x00\xD5\x9B\x11\xB5P\x80\xEF\xED\x00\x00\xEER\x1E\x19\x00\x00\xD2\x03\xEER\x02~\x00\x00\x00`\xEER\x00x\x00\x00\xB0Z\x91\x89\xFD%\x00\x00\xC8\x00\xEER\xA8""a\x00\x00\x80\x1B\xEER\xD2\x7F\x00\x00\x02\x04\xEER\x00`\x00\x00\x00\xE8""7jx|\x00\x00\xA5#q\x89\xC8\x00\x00\x00\xA8""aq\x89\x80\x1B\x00\x00\x12\x12\xEER\x02~\x00\x00\x00`\xEER\x00x\x00\x00""0\x12\xEER\x85""9\x00\x00\xC8\x00\x96\x89\xA8""a\x00\x00\x80\x9B\xFF\xFF\xD2\x7F\x00\x00\x02""47j\x00`\x00\x00\x00\x00\xEER\xF0\x7F\x00\x00\x85\xB9\x11\xB5\xC8\x80\xEF\xED\xA8\xE1vi\x80\x1B\x00\x00\x12\x00\x00\x00\x02\x00\x00\x00\x00`\xEER\x00x\x00\x00\xFFwq\x89\xBE_\x00\x00\xFD{q\x89\xDE_\x00\x00"
-17-11-2024 02:26:47| Debug    | 79 | ../../mytcpsocket.cpp| slot_read_to_msp | Read Data :  "}\x00\x00\x00\x88{\x00\x00\x1Bzq\x89 X\x00\x00P\x03\xEER\xA5#\x00\x00\xC8\x00\x00\x00\xA8""a\x00\x00\x80\x1B\xEER\xD2\x7F\x00\x00\x02\x02\xEER\x00`\x00\x00\x00\x00\xEER\xF0\x7F\x00\x00\xD5\x9B\x11\xB5P\x80\xEF\xED\x00\x00\xEER\x1E\x19\x00\x00\xD2\x03\xEER\x02~\x00\x00\x00`\xEER\x00x\x00\x00\xB0Z\x91\x89\xFD%\x00\x00\xC8\x00\xEER\xA8""a\x00\x00\x80\x1B\xEER\xD2\x7F\x00\x00\x02\x04\xEER\x00`\x00\x00\x00\xE8""7jx|\x00\x00\xA5#q\x89\xC8\x00\x00\x00\xA8""aq\x89\x80\x1B\x00\x00\x12\x12\xEER\x02~\x00\x00\x00`\xEER\x00x\x00\x00""0\x12\xEER\x85""9\x00\x00\xC8\x00\x96\x89\xA8""a\x00\x00\x80\x9B\xFF\xFF\xD2\x7F\x00\x00\x02""47j\x00`\x00\x00\x00\x00\xEER\xF0\x7F\x00\x00\x85\xB9\x11\xB5\xC8\x80\xEF\xED\xA8\xE1vi\x80\x1B\x00\x00\x12\x00\x00\x00\x02\x00\x00\x00\x00`\xEER\x00x\x00\x00\xFFwq\x89\xBE_\x00\x00\xFD{q\x89\xDE_\x00\x00"
-17-11-2024 02:26:47| Debug    | 195 | ../../mainwindow.cpp| setWorkingModeMSP | ПРД
-17-11-2024 02:26:47| Debug    | 1286 | ../../tsap.cpp| Slot_set_workingmode_from_mw | value:  2
-17-11-2024 02:26:47| Debug    | 326 | ../../mainwindow.cpp| slot_unPacked | 5:  3
-17-11-2024 02:26:47| Debug    | 1185 | ../../tsap.cpp| setCellTable | зашли сюда 
-17-11-2024 02:26:47| Debug    | 1185 | ../../tsap.cpp| setCellTable | зашли сюда 
-17-11-2024 02:26:47| Debug    | 195 | ../../mainwindow.cpp| setWorkingModeMSP | ПРД
-17-11-2024 02:26:47| Debug    | 1286 | ../../tsap.cpp| Slot_set_workingmode_from_mw | value:  2
-17-11-2024 02:26:47| Debug    | 326 | ../../mainwindow.cpp| slot_unPacked | 5:  3
-17-11-2024 02:26:47| Debug    | 1185 | ../../tsap.cpp| setCellTable | зашли сюда 
-17-11-2024 02:26:47| Debug    | 1185 | ../../tsap.cpp| setCellTable | зашли сюда 
-17-11-2024 02:26:59| Debug    | 46 | ../../mytcpsocket.cpp| discardSocket | Disconnect from MSP!!
-17-11-2024 02:26:59| Debug    | 358 | ../../mainwindow.cpp| discardSocket | Disconnect!
-17-11-2024 02:27:08| Debug    | 23 | ../../mytcpsocket.cpp| ConnectToMSP | Connecting...
-17-11-2024 02:27:08| Debug    | 39 | ../../mytcpsocket.cpp| connectSocket | Connect to MSP!!
-17-11-2024 02:27:08| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
-17-11-2024 02:27:08| Debug    | 367 | ../../mainwindow.cpp| connectSocket | Connect!
-17-11-2024 02:27:08| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
-17-11-2024 02:27:10| Debug    | 79 | ../../mytcpsocket.cpp| slot_read_to_msp | Read Data :  "}\x00\x00\x00\x88{\x00\x00\x1B\xAAwx d\x00\x00\xD0\r\xABy\xA5#\x00\x00\xC8\x00\x00\x00\xA8""a\x00\x00\x80\x1B\xABy\xD2\x7F\x00\x00\x02\x0E\xABy\x00`\x00\x00\x00\b\xABy\xF0\x7F\x00\x00\xD5\x1B\x9F\x16P\x80|U\x00\x00\xABy\x1E\x19\x00\x00R\x0E\xABy\x02~\x00\x00\x00`\xABy\x00x\x00\x00\xB0/\x98x\xFD%\x00\x00\xC8\x00\xABy\xA8""a\x00\x00\x80\x1B\xABy\xD2\x7F\x00\x00\x02\x0E\xABy\x00`\x00\x00\x00\xE8W\x98xu\x00\x00\xA5\xA3wx\xC8\x00\x00\x00\xA8\xE1wx\x80\x1B\x00\x00\x12\x1C\xABy\x02~\x00\x00\x00`\xABy\x00x\x00\x00\xB0\x1C\xABy\x85""9\x00\x00\xC8\x00\x9Cx\xA8""a\x00\x00\x80\x9B\xFF\xFF\xD2\x7F\x00\x00\x02""4W\x98\x00`\x00\x00\x00\b\xABy\xF0\x7F\x00\x00m=\x9F\x16\xC8\x80|U\xA8\xE1\x96\x97\x80\x1B\x00\x00\x12\x00\x00\x00\x02\x00\x00\x00\x00`\xABy\x00x\x00\x00\xFF\xA7wx\xBEo\x00\x00\xFD\xABwx\xDEg\x00\x00"
-17-11-2024 02:27:10| Debug    | 79 | ../../mytcpsocket.cpp| slot_read_to_msp | Read Data :  "}\x00\x00\x00\x88{\x00\x00\x1B\xAAwx d\x00\x00\xD0\r\xABy\xA5#\x00\x00\xC8\x00\x00\x00\xA8""a\x00\x00\x80\x1B\xABy\xD2\x7F\x00\x00\x02\x0E\xABy\x00`\x00\x00\x00\b\xABy\xF0\x7F\x00\x00\xD5\x1B\x9F\x16P\x80|U\x00\x00\xABy\x1E\x19\x00\x00R\x0E\xABy\x02~\x00\x00\x00`\xABy\x00x\x00\x00\xB0/\x98x\xFD%\x00\x00\xC8\x00\xABy\xA8""a\x00\x00\x80\x1B\xABy\xD2\x7F\x00\x00\x02\x0E\xABy\x00`\x00\x00\x00\xE8W\x98xu\x00\x00\xA5\xA3wx\xC8\x00\x00\x00\xA8\xE1wx\x80\x1B\x00\x00\x12\x1C\xABy\x02~\x00\x00\x00`\xABy\x00x\x00\x00\xB0\x1C\xABy\x85""9\x00\x00\xC8\x00\x9Cx\xA8""a\x00\x00\x80\x9B\xFF\xFF\xD2\x7F\x00\x00\x02""4W\x98\x00`\x00\x00\x00\b\xABy\xF0\x7F\x00\x00m=\x9F\x16\xC8\x80|U\xA8\xE1\x96\x97\x80\x1B\x00\x00\x12\x00\x00\x00\x02\x00\x00\x00\x00`\xABy\x00x\x00\x00\xFF\xA7wx\xBEo\x00\x00\xFD\xABwx\xDEg\x00\x00"
-17-11-2024 02:27:10| Debug    | 195 | ../../mainwindow.cpp| setWorkingModeMSP | ПРД
-17-11-2024 02:27:10| Debug    | 1286 | ../../tsap.cpp| Slot_set_workingmode_from_mw | value:  2
-17-11-2024 02:27:10| Debug    | 326 | ../../mainwindow.cpp| slot_unPacked | 5:  3
-17-11-2024 02:27:10| Debug    | 1185 | ../../tsap.cpp| setCellTable | зашли сюда 
-17-11-2024 02:27:10| Debug    | 1185 | ../../tsap.cpp| setCellTable | зашли сюда 
-17-11-2024 02:27:10| Debug    | 195 | ../../mainwindow.cpp| setWorkingModeMSP | ПРД
-17-11-2024 02:27:10| Debug    | 1286 | ../../tsap.cpp| Slot_set_workingmode_from_mw | value:  2
-17-11-2024 02:27:10| Debug    | 326 | ../../mainwindow.cpp| slot_unPacked | 5:  3
-17-11-2024 02:27:10| Debug    | 1185 | ../../tsap.cpp| setCellTable | зашли сюда 
-17-11-2024 02:27:10| Debug    | 1185 | ../../tsap.cpp| setCellTable | зашли сюда 
-17-11-2024 02:27:13| Debug    | 79 | ../../mytcpsocket.cpp| slot_read_to_msp | Read Data :  "}\x00\x00\x00\x88{\x00\x00\x1B\xAAwx d\x00\x00\xD0\r\xABy\xA5#\x00\x00\xC8\x00\x00\x00\xA8""a\x00\x00\x80\x1B\xABy\xD2\x7F\x00\x00\x02\x0E\xABy\x00`\x00\x00\x00\b\xABy\xF0\x7F\x00\x00\xD5\x1B\x9F\x16P\x80|U\x00\x00\xABy\x1E\x19\x00\x00R\x0E\xABy\x02~\x00\x00\x00`\xABy\x00x\x00\x00\xB0/\x98x\xFD%\x00\x00\xC8\x00\xABy\xA8""a\x00\x00\x80\x1B\xABy\xD2\x7F\x00\x00\x02\x0E\xABy\x00`\x00\x00\x00\xE8W\x98xu\x00\x00\xA5\xA3wx\xC8\x00\x00\x00\xA8\xE1wx\x80\x1B\x00\x00\x12\x1C\xABy\x02~\x00\x00\x00`\xABy\x00x\x00\x00\xB0\x1C\xABy\x85""9\x00\x00\xC8\x00\x9Cx\xA8""a\x00\x00\x80\x9B\xFF\xFF\xD2\x7F\x00\x00\x02""4W\x98\x00`\x00\x00\x00\b\xABy\xF0\x7F\x00\x00m=\x9F\x16\xC8\x80|U\xA8\xE1\x96\x97\x80\x1B\x00\x00\x12\x00\x00\x00\x02\x00\x00\x00\x00`\xABy\x00x\x00\x00\xFF\xA7wx\xBEo\x00\x00\xFD\xABwx\xDEg\x00\x00"
-17-11-2024 02:27:13| Debug    | 195 | ../../mainwindow.cpp| setWorkingModeMSP | ПРД
-17-11-2024 02:27:13| Debug    | 1286 | ../../tsap.cpp| Slot_set_workingmode_from_mw | value:  2
-17-11-2024 02:27:13| Debug    | 326 | ../../mainwindow.cpp| slot_unPacked | 5:  3
-17-11-2024 02:27:13| Debug    | 1185 | ../../tsap.cpp| setCellTable | зашли сюда 
-17-11-2024 02:27:13| Debug    | 1185 | ../../tsap.cpp| setCellTable | зашли сюда 
-17-11-2024 02:27:13| Debug    | 79 | ../../mytcpsocket.cpp| slot_read_to_msp | Read Data :  "}\x00\x00\x00\x88{\x00\x00\x1B\xAAwx d\x00\x00\xD0\r\xABy\xA5#\x00\x00\xC8\x00\x00\x00\xA8""a\x00\x00\x80\x1B\xABy\xD2\x7F\x00\x00\x02\x0E\xABy\x00`\x00\x00\x00\b\xABy\xF0\x7F\x00\x00\xD5\x1B\x9F\x16P\x80|U\x00\x00\xABy\x1E\x19\x00\x00R\x0E\xABy\x02~\x00\x00\x00`\xABy\x00x\x00\x00\xB0/\x98x\xFD%\x00\x00\xC8\x00\xABy\xA8""a\x00\x00\x80\x1B\xABy\xD2\x7F\x00\x00\x02\x0E\xABy\x00`\x00\x00\x00\xE8W\x98xu\x00\x00\xA5\xA3wx\xC8\x00\x00\x00\xA8\xE1wx\x80\x1B\x00\x00\x12\x1C\xABy\x02~\x00\x00\x00`\xABy\x00x\x00\x00\xB0\x1C\xABy\x85""9\x00\x00\xC8\x00\x9Cx\xA8""a\x00\x00\x80\x9B\xFF\xFF\xD2\x7F\x00\x00\x02""4W\x98\x00`\x00\x00\x00\b\xABy\xF0\x7F\x00\x00m=\x9F\x16\xC8\x80|U\xA8\xE1\x96\x97\x80\x1B\x00\x00\x12\x00\x00\x00\x02\x00\x00\x00\x00`\xABy\x00x\x00\x00\xFF\xA7wx\xBEo\x00\x00\xFD\xABwx\xDEg\x00\x00"
-17-11-2024 02:27:13| Debug    | 79 | ../../mytcpsocket.cpp| slot_read_to_msp | Read Data :  "}\x00\x00\x00\x88{\x00\x00\x1B\xAAwx d\x00\x00\xD0\r\xABy\xA5#\x00\x00\xC8\x00\x00\x00\xA8""a\x00\x00\x80\x1B\xABy\xD2\x7F\x00\x00\x02\x0E\xABy\x00`\x00\x00\x00\b\xABy\xF0\x7F\x00\x00\xD5\x1B\x9F\x16P\x80|U\x00\x00\xABy\x1E\x19\x00\x00R\x0E\xABy\x02~\x00\x00\x00`\xABy\x00x\x00\x00\xB0/\x98x\xFD%\x00\x00\xC8\x00\xABy\xA8""a\x00\x00\x80\x1B\xABy\xD2\x7F\x00\x00\x02\x0E\xABy\x00`\x00\x00\x00\xE8W\x98xu\x00\x00\xA5\xA3wx\xC8\x00\x00\x00\xA8\xE1wx\x80\x1B\x00\x00\x12\x1C\xABy\x02~\x00\x00\x00`\xABy\x00x\x00\x00\xB0\x1C\xABy\x85""9\x00\x00\xC8\x00\x9Cx\xA8""a\x00\x00\x80\x9B\xFF\xFF\xD2\x7F\x00\x00\x02""4W\x98\x00`\x00\x00\x00\b\xABy\xF0\x7F\x00\x00m=\x9F\x16\xC8\x80|U\xA8\xE1\x96\x97\x80\x1B\x00\x00\x12\x00\x00\x00\x02\x00\x00\x00\x00`\xABy\x00x\x00\x00\xFF\xA7wx\xBEo\x00\x00\xFD\xABwx\xDEg\x00\x00"
-17-11-2024 02:27:13| Debug    | 195 | ../../mainwindow.cpp| setWorkingModeMSP | ПРД
-17-11-2024 02:27:13| Debug    | 1286 | ../../tsap.cpp| Slot_set_workingmode_from_mw | value:  2
-17-11-2024 02:27:13| Debug    | 326 | ../../mainwindow.cpp| slot_unPacked | 5:  3
-17-11-2024 02:27:13| Debug    | 1185 | ../../tsap.cpp| setCellTable | зашли сюда 
-17-11-2024 02:27:13| Debug    | 1185 | ../../tsap.cpp| setCellTable | зашли сюда 
-17-11-2024 02:27:13| Debug    | 195 | ../../mainwindow.cpp| setWorkingModeMSP | ПРД
-17-11-2024 02:27:13| Debug    | 1286 | ../../tsap.cpp| Slot_set_workingmode_from_mw | value:  2
-17-11-2024 02:27:13| Debug    | 326 | ../../mainwindow.cpp| slot_unPacked | 5:  3
-17-11-2024 02:27:13| Debug    | 1185 | ../../tsap.cpp| setCellTable | зашли сюда 
-17-11-2024 02:27:13| Debug    | 1185 | ../../tsap.cpp| setCellTable | зашли сюда 
-17-11-2024 02:29:07| Debug    | 46 | ../../mytcpsocket.cpp| discardSocket | Disconnect from MSP!!
-17-11-2024 02:29:07| Debug    | 358 | ../../mainwindow.cpp| discardSocket | Disconnect!
-17-11-2024 02:29:13| Debug    | 23 | ../../mytcpsocket.cpp| ConnectToMSP | Connecting...
-17-11-2024 02:29:13| Debug    | 39 | ../../mytcpsocket.cpp| connectSocket | Connect to MSP!!
-17-11-2024 02:29:13| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
-17-11-2024 02:29:13| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
-17-11-2024 02:29:13| Debug    | 367 | ../../mainwindow.cpp| connectSocket | Connect!
-�емые данные:  "\x04\x00\x00\x80"
-17-11-2024 02:29:16| Debug    | 79 | ../../mytcpsocket.cpp| slot_read_to_msp | Read Data :  "}\x00\x00\x00\x89{\x00\x00\x1B\xFA\xC5\x0E `\x00\x00\x10P~\x0B\xA5#\x00\x00\xC8\x00\x00\x00\xA8""a\x00\x00\x80\x1B~\x0B\xD2\x7F\x00\x00\x02P~\x0B\x00`\x00\x00\x00H~\x0B\xF0\x7F\x00\x00\xD5\x9B\x16""4P\x00i\xCA\x00\x00~\x0B\x1E\x19\x00\x00\x92P~\x0B\x02~\x00\x00\x00`~\x0B\x00x\x00\x00\xD0\xBD\xE6\x0E\xFD%\x00\x00\xC8\x00~\x0B\xA8""a\x00\x00\x80\x1B~\x0B\xD2\x7F\x00\x00\x02P~\x0B\x00`\x00\x00\x00\xE8\xB7Q8v\x00\x00\xA5\xA3\xC5\x0E\xC8\x00\x00\x00\xA8\xE1\xC5\x0E\x80\x1B\x00\x00\x12^~\x0B\x02~\x00\x00\x00`~\x0B\x00x\x00\x00\xF0^~\x0B\x85""9\x00\x00\xC8\x80\xE8\x0E\xA8""a\x00\x00\x80\x9B\xFF\xFF\xD2\x7F\x00\x00\x02""4\xB7Q\x00`\x00\x00\x00P~\x0B\xE0\x7F\x00\x00\x00\x80\x16""4\x00\x00i\xCA\x00\x80\xF6P\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00~\x0B\x00x\x00\x00\xFF\xF7\xC5\x0E\xBEo\x00\x00\xFD\xFB\xC5\x0E\xDEg\x00\x00"
-17-11-2024 02:29:16| Debug    | 79 | ../../mytcpsocket.cpp| slot_read_to_msp | Read Data :  "}\x00\x00\x00\x89{\x00\x00\x1B\xFA\xC5\x0E `\x00\x00\x10P~\x0B\xA5#\x00\x00\xC8\x00\x00\x00\xA8""a\x00\x00\x80\x1B~\x0B\xD2\x7F\x00\x00\x02P~\x0B\x00`\x00\x00\x00H~\x0B\xF0\x7F\x00\x00\xD5\x9B\x16""4P\x00i\xCA\x00\x00~\x0B\x1E\x19\x00\x00\x92P~\x0B\x02~\x00\x00\x00`~\x0B\x00x\x00\x00\xD0\xBD\xE6\x0E\xFD%\x00\x00\xC8\x00~\x0B\xA8""a\x00\x00\x80\x1B~\x0B\xD2\x7F\x00\x00\x02P~\x0B\x00`\x00\x00\x00\xE8\xB7Q8v\x00\x00\xA5\xA3\xC5\x0E\xC8\x00\x00\x00\xA8\xE1\xC5\x0E\x80\x1B\x00\x00\x12^~\x0B\x02~\x00\x00\x00`~\x0B\x00x\x00\x00\xF0^~\x0B\x85""9\x00\x00\xC8\x80\xE8\x0E\xA8""a\x00\x00\x80\x9B\xFF\xFF\xD2\x7F\x00\x00\x02""4\xB7Q\x00`\x00\x00\x00P~\x0B\xE0\x7F\x00\x00\x00\x80\x16""4\x00\x00i\xCA\x00\x80\xF6P\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00~\x0B\x00x\x00\x00\xFF\xF7\xC5\x0E\xBEo\x00\x00\xFD\xFB\xC5\x0E\xDEg\x00\x00"
-17-11-2024 02:29:16| Debug    | 195 | ../../mainwindow.cpp| setWorkingModeMSP | ПРД
-17-11-2024 02:29:16| Debug    | 1286 | ../../tsap.cpp| Slot_set_workingmode_from_mw | value:  2
-17-11-2024 02:29:16| Debug    | 326 | ../../mainwindow.cpp| slot_unPacked | 5:  3
-17-11-2024 02:29:16| Debug    | 1185 | ../../tsap.cpp| setCellTable | зашли сюда 
-17-11-2024 02:29:16| Debug    | 1185 | ../../tsap.cpp| setCellTable | зашли сюда 
-17-11-2024 02:29:16| Debug    | 195 | ../../mainwindow.cpp| setWorkingModeMSP | ПРД
-17-11-2024 02:29:16| Debug    | 1286 | ../../tsap.cpp| Slot_set_workingmode_from_mw | value:  2
-17-11-2024 02:29:16| Debug    | 326 | ../../mainwindow.cpp| slot_unPacked | 5:  3
-17-11-2024 02:29:16| Debug    | 1185 | ../../tsap.cpp| setCellTable | зашли сюда 
-17-11-2024 02:29:16| Debug    | 1185 | ../../tsap.cpp| setCellTable | зашли сюда 
-17-11-2024 02:30:41| Debug    | 79 | ../../mytcpsocket.cpp| slot_read_to_msp | Read Data :  "}\x00\x00\x00\x89{\x00\x00\x1B\xFA\xC5\x0E `\x00\x00\x10P~\x0B\xA5#\x00\x00\xC8\x00\x00\x00\xA8""a\x00\x00\x80\x1B~\x0B\xD2\x7F\x00\x00\x02P~\x0B\x00`\x00\x00\x00H~\x0B\xF0\x7F\x00\x00\xD5\x9B\x16""4P\x00i\xCA\x00\x00~\x0B\x1E\x19\x00\x00\x92P~\x0B\x02~\x00\x00\x00`~\x0B\x00x\x00\x00\xD0\xBD\xE6\x0E\xFD%\x00\x00\xC8\x00~\x0B\xA8""a\x00\x00\x80\x1B~\x0B\xD2\x7F\x00\x00\x02P~\x0B\x00`\x00\x00\x00\xE8\xB7Q8v\x00\x00\xA5\xA3\xC5\x0E\xC8\x00\x00\x00\xA8\xE1\xC5\x0E\x80\x1B\x00\x00\x12^~\x0B\x02~\x00\x00\x00`~\x0B\x00x\x00\x00\xF0^~\x0B\x85""9\x00\x00\xC8\x80\xE8\x0E\xA8""a\x00\x00\x80\x9B\xFF\xFF\xD2\x7F\x00\x00\x02""4\xB7Q\x00`\x00\x00\x00P~\x0B\xE0\x7F\x00\x00\x00\x80\x16""4\x00\x00i\xCA\x00\x80\xF6P\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00~\x0B\x00x\x00\x00\xFF\xF7\xC5\x0E\xBEo\x00\x00\xFD\xFB\xC5\x0E\xDEg\x00\x00"
-17-11-2024 02:30:41| Debug    | 79 | ../../mytcpsocket.cpp| slot_read_to_msp | Read Data :  "}\x00\x00\x00\x89{\x00\x00\x1B\xFA\xC5\x0E `\x00\x00\x10P~\x0B\xA5#\x00\x00\xC8\x00\x00\x00\xA8""a\x00\x00\x80\x1B~\x0B\xD2\x7F\x00\x00\x02P~\x0B\x00`\x00\x00\x00H~\x0B\xF0\x7F\x00\x00\xD5\x9B\x16""4P\x00i\xCA\x00\x00~\x0B\x1E\x19\x00\x00\x92P~\x0B\x02~\x00\x00\x00`~\x0B\x00x\x00\x00\xD0\xBD\xE6\x0E\xFD%\x00\x00\xC8\x00~\x0B\xA8""a\x00\x00\x80\x1B~\x0B\xD2\x7F\x00\x00\x02P~\x0B\x00`\x00\x00\x00\xE8\xB7Q8v\x00\x00\xA5\xA3\xC5\x0E\xC8\x00\x00\x00\xA8\xE1\xC5\x0E\x80\x1B\x00\x00\x12^~\x0B\x02~\x00\x00\x00`~\x0B\x00x\x00\x00\xF0^~\x0B\x85""9\x00\x00\xC8\x80\xE8\x0E\xA8""a\x00\x00\x80\x9B\xFF\xFF\xD2\x7F\x00\x00\x02""4\xB7Q\x00`\x00\x00\x00P~\x0B\xE0\x7F\x00\x00\x00\x80\x16""4\x00\x00i\xCA\x00\x80\xF6P\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00~\x0B\x00x\x00\x00\xFF\xF7\xC5\x0E\xBEo\x00\x00\xFD\xFB\xC5\x0E\xDEg\x00\x00"
-17-11-2024 02:30:41| Debug    | 195 | ../../mainwindow.cpp| setWorkingModeMSP | ПРД
-17-11-2024 02:30:41| Debug    | 1286 | ../../tsap.cpp| Slot_set_workingmode_from_mw | value:  2
-17-11-2024 02:30:41| Debug    | 326 | ../../mainwindow.cpp| slot_unPacked | 5:  3
-17-11-2024 02:30:41| Debug    | 1185 | ../../tsap.cpp| setCellTable | зашли сюда 
-17-11-2024 02:30:41| Debug    | 1185 | ../../tsap.cpp| setCellTable | зашли сюда 
-17-11-2024 02:30:41| Debug    | 195 | ../../mainwindow.cpp| setWorkingModeMSP | ПРД
-17-11-2024 02:30:41| Debug    | 1286 | ../../tsap.cpp| Slot_set_workingmode_from_mw | value:  2
-17-11-2024 02:30:41| Debug    | 326 | ../../mainwindow.cpp| slot_unPacked | 5:  3
-17-11-2024 02:30:41| Debug    | 1185 | ../../tsap.cpp| setCellTable | зашли сюда 
-17-11-2024 02:30:41| Debug    | 1185 | ../../tsap.cpp| setCellTable | зашли сюда 
+18-11-2024 01:39:51| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:51| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:51| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:51| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:51| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:51| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:51| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:51| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:51| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:51| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:51| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:51| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:51| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:51| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:51| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:51| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:51| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:51| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:51| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:51| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:51| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:51| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:51| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:51| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:51| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:51| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:51| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:51| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:51| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:51| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:51| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:51| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:51| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:51| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:51| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:51| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:51| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:51| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:51| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:51| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:51| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:51| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:51| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:51| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:51| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:51| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:51| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:51| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:51| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:51| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:51| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:51| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:51| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:51| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:51| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:51| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:51| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:51| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:51| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:51| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:51| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:51| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:51| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:51| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:51| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:51| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:51| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:51| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:51| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:51| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:51| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:51| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:51| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:51| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:51| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:51| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:51| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:51| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:51| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:51| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:51| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:51| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:51| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:51| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:51| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:51| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:51| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:51| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:51| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:51| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:51| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:51| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:51| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:51| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:51| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:51| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:51| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:51| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:51| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:51| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:51| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:51| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:51| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:51| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:51| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:51| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:51| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:51| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:51| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:51| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:51| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:51| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:51| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:51| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:51| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:51| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:51| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:51| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:51| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:51| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:51| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:51| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:51| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:51| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:51| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:51| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:51| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:51| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:51| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:51| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:51| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:51| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:51| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:51| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:51| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:51| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:51| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:51| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:51| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:51| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:51| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:51| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:51| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:51| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:51| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:51| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:51| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:51| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:51| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:51| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:51| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:51| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:51| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:51| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:51| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:51| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:51| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:51| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:51| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:51| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:51| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:51| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:51| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:51| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:51| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:51| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:51| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:51| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:51| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:51| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:51| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:51| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:51| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:51| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:51| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:51| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:51| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:51| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:51| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:51| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:51| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:51| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:51| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:51| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:51| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:51| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:51| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:51| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:51| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:51| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:51| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:51| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:51| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:51| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:51| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:51| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:51| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:51| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:51| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:51| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:51| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:51| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:51| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:51| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:51| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:51| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:51| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:51| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:51| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:51| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:51| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:51| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:51| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:51| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:51| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:51| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:51| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:51| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:51| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:51| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:51| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:51| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:51| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:51| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:51| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:51| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:51| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:51| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:51| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:51| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:51| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:51| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:51| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:51| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:51| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:51| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:51| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:51| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:51| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:51| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:51| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:51| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:51| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:51| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:51| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:51| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:51| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:51| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:51| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:51| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:51| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:51| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:51| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:51| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:51| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:51| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:51| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:51| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:51| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:51| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:51| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:51| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:51| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:51| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:51| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:51| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:51| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:51| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:51| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:51| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:51| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:51| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:51| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:51| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:51| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:51| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:51| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:51| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:51| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:51| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:51| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:51| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:51| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:51| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:51| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:51| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:51| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:51| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:51| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:51| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:51| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:51| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:51| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:51| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:51| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:51| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:51| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:51| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:51| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:51| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:51| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:51| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:51| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:51| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:51| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:51| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:52| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:52| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:52| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:52| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:52| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:52| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:52| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:52| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:52| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:52| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:52| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:52| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:52| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:52| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:52| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:52| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:52| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:52| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:52| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:52| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:53| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:53| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:53| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:53| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:53| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:53| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:53| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:53| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:53| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:53| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:53| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:53| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:53| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:53| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:53| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:53| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:53| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:53| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:53| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:53| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:54| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:54| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:54| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:54| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:54| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:54| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:54| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:54| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:54| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:54| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:54| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:54| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:54| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:54| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:54| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:54| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:54| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:54| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:54| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:54| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:55| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:55| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:55| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:55| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:55| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:55| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:55| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:55| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:55| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:55| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:55| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:55| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:55| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:55| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:55| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:55| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:55| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:55| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:55| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:55| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:56| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:56| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:56| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:56| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:56| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:56| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:56| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:56| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:56| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:56| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:56| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:56| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:56| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:56| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:56| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:56| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:56| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:56| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:56| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:56| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:57| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:57| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:57| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:57| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:57| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:57| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:57| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:57| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:57| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:57| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:57| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:57| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:57| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:39:57| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:39:57| Debug    | 79 | ../../mytcpsocket.cpp| slot_read_to_msp | Read Data :  "}\x00\x00\x00\x89{\x00\x00\x1B\xDA\xF6\xBD \\\x00\x00\xB0:\x9F\x16\xA5#\x00\x00\xC8\x00\x00\x00\xA8""a\x00\x00\x80\x1B\x9F\x16\xD2\x7F\x00\x00\x02:\x9F\x16\x00`\x00\x00\x00""8\x9F\x16\xF0\x7F\x00\x00\xD5\x1B\xF6\xCBP\x00%:\x00\x00\x9F\x16\x1E\x19\x00\x00R;\x9F\x16\x02~\x00\x00\x00`\x9F\x16\x00x\x00\x00""0d\x17\xBE\xFD%\x00\x00\xC8\x00\x9F\x16\xA8""a\x00\x00\x80\x1B\x9F\x16\xD2\x7F\x00\x00\x02:\x9F\x16\x00`\x00\x00\x00\xE8W\x89\x18x\x00\x00\xA5\xA3\xF6\xBD\xC8\x00\x00\x00\xA8\xE1\xF6\xBD\x80\x1B\x00\x00\x12\x00\x00\x00\x02\x00\x00\x00\x00`\x00\x00\x00\x00\x00\x00pI\x9F\x16\x85""9\x00\x00\xC8\x80\x19\xBE\xA8""a\x00\x00\x80\x9B\xFF\xFF\xD2\x7F\x00\x00\x02\x1C\x05\x89\x00`\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xF6\xCB\x00\x00%:\x00\x80\x96\x88\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x9F\x16\x00x\x00\x00\xFF\xD7\xF6\xBD\xBE_\x00\x00\xFD\xDB\xF6\xBD\xDE_\x00\x00"
+18-11-2024 01:39:57| Debug    | 200 | ../../mainwindow.cpp| setWorkingModeMSP | ПРД
+18-11-2024 01:39:57| Debug    | 1286 | ../../tsap.cpp| Slot_set_workingmode_from_mw | value:  2
+18-11-2024 01:39:57| Debug    | 341 | ../../mainwindow.cpp| slot_unPacked | 5:  3
+18-11-2024 01:39:57| Debug    | 1185 | ../../tsap.cpp| setCellTable | зашли сюда 
+18-11-2024 01:39:57| Debug    | 1185 | ../../tsap.cpp| setCellTable | зашли сюда 
+18-11-2024 01:40:03| Debug    | 79 | ../../mytcpsocket.cpp| slot_read_to_msp | Read Data :  "}\x00\x00\x00\x89{\x00\x00\x1B\xDA\xF6\xBD \\\x00\x00\xB0:\x9F\x16\xA5#\x00\x00\xC8\x00\x00\x00\xA8""a\x00\x00\x80\x1B\x9F\x16\xD2\x7F\x00\x00\x02:\x9F\x16\x00`\x00\x00\x00""8\x9F\x16\xF0\x7F\x00\x00\xD5\x1B\xF6\xCBP\x00%:\x00\x00\x9F\x16\x1E\x19\x00\x00R;\x9F\x16\x02~\x00\x00\x00`\x9F\x16\x00x\x00\x00""0d\x17\xBE\xFD%\x00\x00\xC8\x00\x9F\x16\xA8""a\x00\x00\x80\x1B\x9F\x16\xD2\x7F\x00\x00\x02:\x9F\x16\x00`\x00\x00\x00\xE8W\x89\x18x\x00\x00\xA5\xA3\xF6\xBD\xC8\x00\x00\x00\xA8\xE1\xF6\xBD\x80\x1B\x00\x00\x12\x00\x00\x00\x02\x00\x00\x00\x00`\x00\x00\x00\x00\x00\x00pI\x9F\x16\x85""9\x00\x00\xC8\x80\x19\xBE\xA8""a\x00\x00\x80\x9B\xFF\xFF\xD2\x7F\x00\x00\x02\x1C\x05\x89\x00`\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xF6\xCB\x00\x00%:\x00\x80\x96\x88\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x9F\x16\x00x\x00\x00\xFF\xD7\xF6\xBD\xBE_\x00\x00\xFD\xDB\xF6\xBD\xDE_\x00\x00"
+18-11-2024 01:40:03| Debug    | 200 | ../../mainwindow.cpp| setWorkingModeMSP | ПРД
+18-11-2024 01:40:03| Debug    | 1286 | ../../tsap.cpp| Slot_set_workingmode_from_mw | value:  2
+18-11-2024 01:40:03| Debug    | 341 | ../../mainwindow.cpp| slot_unPacked | 5:  3
+18-11-2024 01:40:03| Debug    | 1185 | ../../tsap.cpp| setCellTable | зашли сюда 
+18-11-2024 01:40:03| Debug    | 1185 | ../../tsap.cpp| setCellTable | зашли сюда 
+18-11-2024 01:40:05| Debug    | 79 | ../../mytcpsocket.cpp| slot_read_to_msp | Read Data :  "}\x00\x00\x00\x89{\x00\x00\x1B\xDA\xF6\xBD \\\x00\x00\xB0:\x9F\x16\xA5#\x00\x00\xC8\x00\x00\x00\xA8""a\x00\x00\x80\x1B\x9F\x16\xD2\x7F\x00\x00\x02:\x9F\x16\x00`\x00\x00\x00""8\x9F\x16\xF0\x7F\x00\x00\xD5\x1B\xF6\xCBP\x00%:\x00\x00\x9F\x16\x1E\x19\x00\x00R;\x9F\x16\x02~\x00\x00\x00`\x9F\x16\x00x\x00\x00""0d\x17\xBE\xFD%\x00\x00\xC8\x00\x9F\x16\xA8""a\x00\x00\x80\x1B\x9F\x16\xD2\x7F\x00\x00\x02:\x9F\x16\x00`\x00\x00\x00\xE8W\x89\x18x\x00\x00\xA5\xA3\xF6\xBD\xC8\x00\x00\x00\xA8\xE1\xF6\xBD\x80\x1B\x00\x00\x12\x00\x00\x00\x02\x00\x00\x00\x00`\x00\x00\x00\x00\x00\x00pI\x9F\x16\x85""9\x00\x00\xC8\x80\x19\xBE\xA8""a\x00\x00\x80\x9B\xFF\xFF\xD2\x7F\x00\x00\x02\x1C\x05\x89\x00`\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xF6\xCB\x00\x00%:\x00\x80\x96\x88\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x9F\x16\x00x\x00\x00\xFF\xD7\xF6\xBD\xBE_\x00\x00\xFD\xDB\xF6\xBD\xDE_\x00\x00"
+18-11-2024 01:40:05| Debug    | 200 | ../../mainwindow.cpp| setWorkingModeMSP | ПРД
+18-11-2024 01:40:05| Debug    | 1286 | ../../tsap.cpp| Slot_set_workingmode_from_mw | value:  2
+18-11-2024 01:40:05| Debug    | 341 | ../../mainwindow.cpp| slot_unPacked | 5:  3
+18-11-2024 01:40:05| Debug    | 1185 | ../../tsap.cpp| setCellTable | зашли сюда 
+18-11-2024 01:40:05| Debug    | 1185 | ../../tsap.cpp| setCellTable | зашли сюда 
+18-11-2024 01:40:06| Debug    | 79 | ../../mytcpsocket.cpp| slot_read_to_msp | Read Data :  "}\x00\x00\x00\x89{\x00\x00\x1B\xDA\xF6\xBD \\\x00\x00\xB0:\x9F\x16\xA5#\x00\x00\xC8\x00\x00\x00\xA8""a\x00\x00\x80\x1B\x9F\x16\xD2\x7F\x00\x00\x02:\x9F\x16\x00`\x00\x00\x00""8\x9F\x16\xF0\x7F\x00\x00\xD5\x1B\xF6\xCBP\x00%:\x00\x00\x9F\x16\x1E\x19\x00\x00R;\x9F\x16\x02~\x00\x00\x00`\x9F\x16\x00x\x00\x00""0d\x17\xBE\xFD%\x00\x00\xC8\x00\x9F\x16\xA8""a\x00\x00\x80\x1B\x9F\x16\xD2\x7F\x00\x00\x02:\x9F\x16\x00`\x00\x00\x00\xE8W\x89\x18x\x00\x00\xA5\xA3\xF6\xBD\xC8\x00\x00\x00\xA8\xE1\xF6\xBD\x80\x1B\x00\x00\x12\x00\x00\x00\x02\x00\x00\x00\x00`\x00\x00\x00\x00\x00\x00pI\x9F\x16\x85""9\x00\x00\xC8\x80\x19\xBE\xA8""a\x00\x00\x80\x9B\xFF\xFF\xD2\x7F\x00\x00\x02\x1C\x05\x89\x00`\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xF6\xCB\x00\x00%:\x00\x80\x96\x88\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x9F\x16\x00x\x00\x00\xFF\xD7\xF6\xBD\xBE_\x00\x00\xFD\xDB\xF6\xBD\xDE_\x00\x00"
+18-11-2024 01:40:06| Debug    | 200 | ../../mainwindow.cpp| setWorkingModeMSP | ПРД
+18-11-2024 01:40:06| Debug    | 1286 | ../../tsap.cpp| Slot_set_workingmode_from_mw | value:  2
+18-11-2024 01:40:06| Debug    | 341 | ../../mainwindow.cpp| slot_unPacked | 5:  3
+18-11-2024 01:40:06| Debug    | 1185 | ../../tsap.cpp| setCellTable | зашли сюда 
+18-11-2024 01:40:06| Debug    | 1185 | ../../tsap.cpp| setCellTable | зашли сюда 
+18-11-2024 01:40:07| Debug    | 79 | ../../mytcpsocket.cpp| slot_read_to_msp | Read Data :  "}\x00\x00\x00\x89{\x00\x00\x1B\xDA\xF6\xBD \\\x00\x00\xB0:\x9F\x16\xA5#\x00\x00\xC8\x00\x00\x00\xA8""a\x00\x00\x80\x1B\x9F\x16\xD2\x7F\x00\x00\x02:\x9F\x16\x00`\x00\x00\x00""8\x9F\x16\xF0\x7F\x00\x00\xD5\x1B\xF6\xCBP\x00%:\x00\x00\x9F\x16\x1E\x19\x00\x00R;\x9F\x16\x02~\x00\x00\x00`\x9F\x16\x00x\x00\x00""0d\x17\xBE\xFD%\x00\x00\xC8\x00\x9F\x16\xA8""a\x00\x00\x80\x1B\x9F\x16\xD2\x7F\x00\x00\x02:\x9F\x16\x00`\x00\x00\x00\xE8W\x89\x18x\x00\x00\xA5\xA3\xF6\xBD\xC8\x00\x00\x00\xA8\xE1\xF6\xBD\x80\x1B\x00\x00\x12\x00\x00\x00\x02\x00\x00\x00\x00`\x00\x00\x00\x00\x00\x00pI\x9F\x16\x85""9\x00\x00\xC8\x80\x19\xBE\xA8""a\x00\x00\x80\x9B\xFF\xFF\xD2\x7F\x00\x00\x02\x1C\x05\x89\x00`\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xF6\xCB\x00\x00%:\x00\x80\x96\x88\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x9F\x16\x00x\x00\x00\xFF\xD7\xF6\xBD\xBE_\x00\x00\xFD\xDB\xF6\xBD\xDE_\x00\x00"
+18-11-2024 01:40:07| Debug    | 200 | ../../mainwindow.cpp| setWorkingModeMSP | ПРД
+18-11-2024 01:40:07| Debug    | 1286 | ../../tsap.cpp| Slot_set_workingmode_from_mw | value:  2
+18-11-2024 01:40:07| Debug    | 341 | ../../mainwindow.cpp| slot_unPacked | 5:  3
+18-11-2024 01:40:07| Debug    | 1185 | ../../tsap.cpp| setCellTable | зашли сюда 
+18-11-2024 01:40:07| Debug    | 1185 | ../../tsap.cpp| setCellTable | зашли сюда 
+18-11-2024 01:40:08| Debug    | 79 | ../../mytcpsocket.cpp| slot_read_to_msp | Read Data :  "}\x00\x00\x00\x89{\x00\x00\x1B\xDA\xF6\xBD \\\x00\x00\xB0:\x9F\x16\xA5#\x00\x00\xC8\x00\x00\x00\xA8""a\x00\x00\x80\x1B\x9F\x16\xD2\x7F\x00\x00\x02:\x9F\x16\x00`\x00\x00\x00""8\x9F\x16\xF0\x7F\x00\x00\xD5\x1B\xF6\xCBP\x00%:\x00\x00\x9F\x16\x1E\x19\x00\x00R;\x9F\x16\x02~\x00\x00\x00`\x9F\x16\x00x\x00\x00""0d\x17\xBE\xFD%\x00\x00\xC8\x00\x9F\x16\xA8""a\x00\x00\x80\x1B\x9F\x16\xD2\x7F\x00\x00\x02:\x9F\x16\x00`\x00\x00\x00\xE8W\x89\x18x\x00\x00\xA5\xA3\xF6\xBD\xC8\x00\x00\x00\xA8\xE1\xF6\xBD\x80\x1B\x00\x00\x12\x00\x00\x00\x02\x00\x00\x00\x00`\x00\x00\x00\x00\x00\x00pI\x9F\x16\x85""9\x00\x00\xC8\x80\x19\xBE\xA8""a\x00\x00\x80\x9B\xFF\xFF\xD2\x7F\x00\x00\x02\x1C\x05\x89\x00`\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xF6\xCB\x00\x00%:\x00\x80\x96\x88\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x9F\x16\x00x\x00\x00\xFF\xD7\xF6\xBD\xBE_\x00\x00\xFD\xDB\xF6\xBD\xDE_\x00\x00"
+18-11-2024 01:40:08| Debug    | 200 | ../../mainwindow.cpp| setWorkingModeMSP | ПРД
+18-11-2024 01:40:08| Debug    | 1286 | ../../tsap.cpp| Slot_set_workingmode_from_mw | value:  2
+18-11-2024 01:40:08| Debug    | 341 | ../../mainwindow.cpp| slot_unPacked | 5:  3
+18-11-2024 01:40:08| Debug    | 1185 | ../../tsap.cpp| setCellTable | зашли сюда 
+18-11-2024 01:40:08| Debug    | 1185 | ../../tsap.cpp| setCellTable | зашли сюда 
+18-11-2024 01:40:09| Debug    | 79 | ../../mytcpsocket.cpp| slot_read_to_msp | Read Data :  "}\x00\x00\x00\x89{\x00\x00\x1B\xDA\xF6\xBD \\\x00\x00\xB0:\x9F\x16\xA5#\x00\x00\xC8\x00\x00\x00\xA8""a\x00\x00\x80\x1B\x9F\x16\xD2\x7F\x00\x00\x02:\x9F\x16\x00`\x00\x00\x00""8\x9F\x16\xF0\x7F\x00\x00\xD5\x1B\xF6\xCBP\x00%:\x00\x00\x9F\x16\x1E\x19\x00\x00R;\x9F\x16\x02~\x00\x00\x00`\x9F\x16\x00x\x00\x00""0d\x17\xBE\xFD%\x00\x00\xC8\x00\x9F\x16\xA8""a\x00\x00\x80\x1B\x9F\x16\xD2\x7F\x00\x00\x02:\x9F\x16\x00`\x00\x00\x00\xE8W\x89\x18x\x00\x00\xA5\xA3\xF6\xBD\xC8\x00\x00\x00\xA8\xE1\xF6\xBD\x80\x1B\x00\x00\x12\x00\x00\x00\x02\x00\x00\x00\x00`\x00\x00\x00\x00\x00\x00pI\x9F\x16\x85""9\x00\x00\xC8\x80\x19\xBE\xA8""a\x00\x00\x80\x9B\xFF\xFF\xD2\x7F\x00\x00\x02\x1C\x05\x89\x00`\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xF6\xCB\x00\x00%:\x00\x80\x96\x88\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x9F\x16\x00x\x00\x00\xFF\xD7\xF6\xBD\xBE_\x00\x00\xFD\xDB\xF6\xBD\xDE_\x00\x00"
+18-11-2024 01:40:09| Debug    | 200 | ../../mainwindow.cpp| setWorkingModeMSP | ПРД
+18-11-2024 01:40:09| Debug    | 1286 | ../../tsap.cpp| Slot_set_workingmode_from_mw | value:  2
+18-11-2024 01:40:09| Debug    | 341 | ../../mainwindow.cpp| slot_unPacked | 5:  3
+18-11-2024 01:40:09| Debug    | 1185 | ../../tsap.cpp| setCellTable | зашли сюда 
+18-11-2024 01:40:09| Debug    | 1185 | ../../tsap.cpp| setCellTable | зашли сюда 
+18-11-2024 01:40:19| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:40:19| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:40:19| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:40:19| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:40:20| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:40:20| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:40:20| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:40:20| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:40:20| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:40:20| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:40:20| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:40:20| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:40:20| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:40:20| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:40:20| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:40:20| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:40:20| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:40:20| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:40:20| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:40:20| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:40:20| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:40:20| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:40:20| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:40:20| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:40:21| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:40:21| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:40:21| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:40:21| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:40:21| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:40:21| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:40:21| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:40:21| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:40:21| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:40:21| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:40:21| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:40:21| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:40:21| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:40:21| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:40:21| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:40:21| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:40:21| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:40:21| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:40:21| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:40:21| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:40:22| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:40:22| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:40:22| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:40:22| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:40:22| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:40:22| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:40:22| Debug    | 52 | ../../mytcpsocket.cpp| slot_write_to_msp | Commands:  4
+18-11-2024 01:40:22| Debug    | 59 | ../../mytcpsocket.cpp| slot_write_to_msp | предаваемые данные:  "\x04\x00\x00\x80"
+18-11-2024 01:40:22| Debug    | 46 | ../../mytcpsocket.cpp| discardSocket | Disconnect from MSP!!
+18-11-2024 01:40:22| Debug    | 375 | ../../mainwindow.cpp| discardSocket | Disconnect!
