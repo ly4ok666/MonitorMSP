@@ -8,6 +8,20 @@ Tsap::Tsap(QWidget *parent)
     ui->setupUi(this);
     ui->stackedWidget->setCurrentIndex(0);
 
+    ui->tableWidget->setColumnCount(192);
+    ui->tableWidget->setRowCount(18);
+
+    for(int wCol = 0; wCol < 192; wCol += 2)
+    {
+        ui->tableWidget->setColumnHidden(wCol,true);
+        ui->tableWidget->setColumnHidden(wCol-1,true);
+        ui->tableWidget->setColumnHidden(191,true);
+        for(int wRow = 0; wRow < 18; wRow += 3)
+        {
+            ui->tableWidget->setSpan(wRow,wCol,3,1);
+        }
+    }
+
     Table = new _TableFormularTargets*[m_rows];
     for (int i = 0; i < m_rows; i++)
         Table[i] = new _TableFormularTargets[m_cols];
@@ -160,6 +174,9 @@ Tsap::Tsap(QWidget *parent)
 void Tsap::Slot_clickGraph(QCPAbstractPlottable* potItem, int num, QMouseEvent* event)
 {
     ui->stackedWidget->setCurrentIndex(1);
+    HidenColandRow(getLastSign(), false);
+    // item->setTextAlignment(Qt::AlignJustify); // 1
+    // item->setTextAlignment(Qt::AlignHCenter); // 2
     QVector<_formularTargetsForTable> TempTargets;
     double dX = potItem->interface1D()->dataMainKey(num);
     double dY = potItem->interface1D()->dataMainValue(num);
@@ -169,109 +186,576 @@ void Tsap::Slot_clickGraph(QCPAbstractPlottable* potItem, int num, QMouseEvent* 
     int dy;
     switch(y)
     {
-    case 5:
+    case 5: //100++
         if(dY > 0)
         {
-            dy = 7;
-            qDebug() << "сколько есть сигналов: " << getTable(dx,dy).size();
+            if(dx == 0)
+            {
+                ShowColandRow(32);
+                setLastSign(23);
+            }
+            if(dx == 1)
+            {
+                ShowColandRow(96);
+                setLastSign(96);
+            }
+            if(dx == 2)
+            {
+                ShowColandRow(160);
+                setLastSign(160);
+            }
+//            dy = 7;
+//            qDebug() << "сколько есть сигналов: " << getTable(dx,dy).size();
+//            ui->tableWidget->setColumnHidden(32,false);
+//            ui->tableWidget->setColumnHidden(33,false);
+//            ui->tableWidget->setColumnHidden(34,false);
+//            ui->tableWidget->setColumnHidden(35,false);
+// 1
+//            ui->tableWidget->setColumnHidden(96,false);
+//            ui->tableWidget->setColumnHidden(97,false);
+//            ui->tableWidget->setColumnHidden(98,false);
+//            ui->tableWidget->setColumnHidden(99,false);
+// 2
+//            ui->tableWidget->setColumnHidden(160,false);
+//            ui->tableWidget->setColumnHidden(161,false);
+//            ui->tableWidget->setColumnHidden(162,false);
+//            ui->tableWidget->setColumnHidden(163,false);
         }
         else
         {
-            dy = 15;
-            qDebug() << "сколько есть сигналов: " << getTable(dx,dy).size();
+            if(dx == 0)
+            {
+                ShowColandRow(0);
+                setLastSign(0);
+            }
+            if(dx == 1)
+            {
+                ShowColandRow(64);
+                setLastSign(64);
+            }
+            if(dx == 2)
+            {
+                ShowColandRow(128);
+                setLastSign(128);
+            }
+//            dy = 15;
+//            qDebug() << "сколько есть сигналов: " << getTable(dx,dy).size();
+//            ui->tableWidget->setColumnHidden(0,false);
+//            ui->tableWidget->setColumnHidden(1,false);
+//            ui->tableWidget->setColumnHidden(2,false);
+//            ui->tableWidget->setColumnHidden(3,false);
+            // 1
+            //            ui->tableWidget->setColumnHidden(64,false);
+            //            ui->tableWidget->setColumnHidden(65,false);
+            //            ui->tableWidget->setColumnHidden(66,false);
+            //            ui->tableWidget->setColumnHidden(67,false);
+            // 2
+            //            ui->tableWidget->setColumnHidden(128,false);
+            //            ui->tableWidget->setColumnHidden(129,false);
+            //            ui->tableWidget->setColumnHidden(130,false);
+            //            ui->tableWidget->setColumnHidden(131,false);
         }
         break;
-    case 15:
+    case 15: //90-100
         if(dY > 0)
         {
-            dy = 6;
-            qDebug() << "сколько есть сигналов: " << getTable(dx,dy).size();
+            if(dx == 0)
+            {
+                ShowColandRow(36);
+                setLastSign(36);
+            }
+            if(dx == 1)
+            {
+                ShowColandRow(100);
+                setLastSign(100);
+            }
+            if(dx == 2)
+            {
+                ShowColandRow(164);
+                setLastSign(164);
+            }
+//            dy = 6;
+//            qDebug() << "сколько есть сигналов: " << getTable(dx,dy).size();
+//            ui->tableWidget->setColumnHidden(36,false);
+//            ui->tableWidget->setColumnHidden(37,false);
+//            ui->tableWidget->setColumnHidden(38,false);
+//            ui->tableWidget->setColumnHidden(39,false);
+// 1
+//            ui->tableWidget->setColumnHidden(100,false);
+//            ui->tableWidget->setColumnHidden(101,false);
+//            ui->tableWidget->setColumnHidden(102,false);
+//            ui->tableWidget->setColumnHidden(103,false);
+// 2
+//            ui->tableWidget->setColumnHidden(164,false);
+//            ui->tableWidget->setColumnHidden(165,false);
+//            ui->tableWidget->setColumnHidden(166,false);
+//            ui->tableWidget->setColumnHidden(167,false);
         }
         else
         {
-            dy = 14;
-            qDebug() << "сколько есть сигналов: " << getTable(dx,dy).size();
+            if(dx == 0)
+            {
+                ShowColandRow(4);
+                setLastSign(4);
+            }
+            if(dx == 1)
+            {
+                ShowColandRow(68);
+                setLastSign(68);
+            }
+            if(dx == 2)
+            {
+                ShowColandRow(132);
+                setLastSign(132);
+            }
+
+//            dy = 14;
+//            qDebug() << "сколько есть сигналов: " << getTable(dx,dy).size();
+//            ui->tableWidget->setColumnHidden(4,false);
+//            ui->tableWidget->setColumnHidden(5,false);
+//            ui->tableWidget->setColumnHidden(6,false);
+//            ui->tableWidget->setColumnHidden(7,false);
+// 1
+//            ui->tableWidget->setColumnHidden(68,false);
+//            ui->tableWidget->setColumnHidden(69,false);
+//            ui->tableWidget->setColumnHidden(70,false);
+//            ui->tableWidget->setColumnHidden(71,false);
+// 2
+//            ui->tableWidget->setColumnHidden(132,false);
+//            ui->tableWidget->setColumnHidden(133,false);
+//            ui->tableWidget->setColumnHidden(134,false);
+//            ui->tableWidget->setColumnHidden(135,false);
         }
         break;
-    case 25:
+    case 25: //80-90
         if(dY > 0)
         {
-            dy = 5;
-            qDebug() << "сколько есть сигналов: " << getTable(dx,dy).size();
+            if(dx == 0)
+            {
+                ShowColandRow(40);
+                setLastSign(40);
+            }
+            if(dx == 1)
+            {
+                ShowColandRow(104);
+                setLastSign(104);
+            }
+            if(dx == 2)
+            {
+                ShowColandRow(168);
+                setLastSign(168);
+            }
+//            dy = 5;
+//            qDebug() << "сколько есть сигналов: " << getTable(dx,dy).size();
+//            ui->tableWidget->setColumnHidden(40,false);
+//            ui->tableWidget->setColumnHidden(41,false);
+//            ui->tableWidget->setColumnHidden(42,false);
+//            ui->tableWidget->setColumnHidden(43,false);
+// 1
+//            ui->tableWidget->setColumnHidden(104,false);
+//            ui->tableWidget->setColumnHidden(105,false);
+//            ui->tableWidget->setColumnHidden(106,false);
+//            ui->tableWidget->setColumnHidden(107,false);
+// 2
+//            ui->tableWidget->setColumnHidden(168,false);
+//            ui->tableWidget->setColumnHidden(169,false);
+//            ui->tableWidget->setColumnHidden(170,false);
+//            ui->tableWidget->setColumnHidden(171,false);
         }
         else
         {
-            dy = 13;
-            qDebug() << "сколько есть сигналов: " << getTable(dx,dy).size();
+            if(dx == 0)
+            {
+                ShowColandRow(8);
+                setLastSign(8);
+            }
+            if(dx == 1)
+            {
+                ShowColandRow(72);
+                setLastSign(72);
+            }
+            if(dx == 2)
+            {
+                ShowColandRow(136);
+                setLastSign(136);
+            }
+//            dy = 13;
+//            qDebug() << "сколько есть сигналов: " << getTable(dx,dy).size();
+//            ui->tableWidget->setColumnHidden(8,false);
+//            ui->tableWidget->setColumnHidden(9,false);
+//            ui->tableWidget->setColumnHidden(10,false);
+//            ui->tableWidget->setColumnHidden(11,false);
+// 1
+//            ui->tableWidget->setColumnHidden(72,false);
+//            ui->tableWidget->setColumnHidden(73,false);
+//            ui->tableWidget->setColumnHidden(74,false);
+//            ui->tableWidget->setColumnHidden(75,false);
+// 2
+//            ui->tableWidget->setColumnHidden(136,false);
+//            ui->tableWidget->setColumnHidden(137,false);
+//            ui->tableWidget->setColumnHidden(138,false);
+//            ui->tableWidget->setColumnHidden(139,false);
         }
         break;
-    case 35:
+    case 35: //70-80
         if(dY > 0)
         {
-            dy = 4;
-            qDebug() << "сколько есть сигналов: " << getTable(dx,dy).size();
+            if(dx == 0)
+            {
+                ShowColandRow(44);
+                setLastSign(44);
+            }
+            if(dx == 1)
+            {
+                ShowColandRow(108);
+                setLastSign(108);
+            }
+            if(dx == 2)
+            {
+                ShowColandRow(172);
+                setLastSign(172);
+            }
+//            dy = 4;
+//            qDebug() << "сколько есть сигналов: " << getTable(dx,dy).size();
+//            ui->tableWidget->setColumnHidden(44,false);
+//            ui->tableWidget->setColumnHidden(45,false);
+//            ui->tableWidget->setColumnHidden(46,false);
+//            ui->tableWidget->setColumnHidden(47,false);
+// 1
+//            ui->tableWidget->setColumnHidden(108,false);
+//            ui->tableWidget->setColumnHidden(109,false);
+//            ui->tableWidget->setColumnHidden(110,false);
+//            ui->tableWidget->setColumnHidden(111,false);
+// 2
+//            ui->tableWidget->setColumnHidden(172,false);
+//            ui->tableWidget->setColumnHidden(173,false);
+//            ui->tableWidget->setColumnHidden(174,false);
+//            ui->tableWidget->setColumnHidden(175,false);
+
         }
         else
         {
-            dy = 12;
-            qDebug() << "сколько есть сигналов: " << getTable(dx,dy).size();
+            if(dx == 0)
+            {
+                ShowColandRow(12);
+                setLastSign(12);
+            }
+            if(dx == 1)
+            {
+                ShowColandRow(76);
+                setLastSign(76);
+            }
+            if(dx == 2)
+            {
+                ShowColandRow(140);
+                setLastSign(140);
+            }
+//            dy = 12;
+//            qDebug() << "сколько есть сигналов: " << getTable(dx,dy).size();
+//            ui->tableWidget->setColumnHidden(12,false);
+//            ui->tableWidget->setColumnHidden(13,false);
+//            ui->tableWidget->setColumnHidden(14,false);
+//            ui->tableWidget->setColumnHidden(15,false);
+// 1
+//            ui->tableWidget->setColumnHidden(76,false);
+//            ui->tableWidget->setColumnHidden(77,false);
+//            ui->tableWidget->setColumnHidden(78,false);
+//            ui->tableWidget->setColumnHidden(79,false);
+// 2
+//            ui->tableWidget->setColumnHidden(140,false);
+//            ui->tableWidget->setColumnHidden(141,false);
+//            ui->tableWidget->setColumnHidden(142,false);
+//            ui->tableWidget->setColumnHidden(143,false);
         };
         break;
-    case 45:
+    case 45: //60-70
         if(dY > 0)
         {
-            dy = 3;
-            qDebug() << "сколько есть сигналов: " << getTable(dx,dy).size();
+            if(dx == 0)
+            {
+                ShowColandRow(48);
+                setLastSign(48);
+            }
+            if(dx == 1)
+            {
+                ShowColandRow(112);
+                setLastSign(112);
+            }
+            if(dx == 2)
+            {
+                ShowColandRow(176);
+                setLastSign(176);
+            }
+//            dy = 3;
+//            qDebug() << "сколько есть сигналов: " << getTable(dx,dy).size();
+//            ui->tableWidget->setColumnHidden(48,false);
+//            ui->tableWidget->setColumnHidden(49,false);
+//            ui->tableWidget->setColumnHidden(50,false);
+//            ui->tableWidget->setColumnHidden(51,false);
+// 1
+//            ui->tableWidget->setColumnHidden(112,false);
+//            ui->tableWidget->setColumnHidden(113,false);
+//            ui->tableWidget->setColumnHidden(114,false);
+//            ui->tableWidget->setColumnHidden(115,false);
+// 2
+//            ui->tableWidget->setColumnHidden(176,false);
+//            ui->tableWidget->setColumnHidden(177,false);
+//            ui->tableWidget->setColumnHidden(178,false);
+//            ui->tableWidget->setColumnHidden(179,false);
         }
         else
         {
-            dy = 11;
-            qDebug() << "сколько есть сигналов: " << getTable(dx,dy).size();
+            if(dx == 0)
+            {
+                ShowColandRow(16);
+                setLastSign(16);
+            }
+            if(dx == 1)
+            {
+                ShowColandRow(80);
+                setLastSign(80);
+            }
+            if(dx == 2)
+            {
+                ShowColandRow(144);
+                setLastSign(144);
+            }
+//            dy = 11;
+//            qDebug() << "сколько есть сигналов: " << getTable(dx,dy).size();
+//            ui->tableWidget->setColumnHidden(16,false);
+//            ui->tableWidget->setColumnHidden(17,false);
+//            ui->tableWidget->setColumnHidden(18,false);
+//            ui->tableWidget->setColumnHidden(19,false);
+// 1
+//            ui->tableWidget->setColumnHidden(80,false);
+//            ui->tableWidget->setColumnHidden(81,false);
+//            ui->tableWidget->setColumnHidden(82,false);
+//            ui->tableWidget->setColumnHidden(83,false);
+// 2
+//            ui->tableWidget->setColumnHidden(144,false);
+//            ui->tableWidget->setColumnHidden(145,false);
+//            ui->tableWidget->setColumnHidden(146,false);
+//            ui->tableWidget->setColumnHidden(147,false);
         }
         break;
-    case 55:
+    case 55: //50-60
         if(dY > 0)
         {
-            dy = 2;
-            qDebug() << "сколько есть сигналов: " << getTable(dx,dy).size();
+            if(dx == 0)
+            {
+                ShowColandRow(52);
+                setLastSign(52);
+            }
+            if(dx == 1)
+            {
+                ShowColandRow(116);
+                setLastSign(116);
+            }
+            if(dx == 2)
+            {
+                ShowColandRow(180);
+                setLastSign(180);
+            }
+//            dy = 2;
+//            qDebug() << "сколько есть сигналов: " << getTable(dx,dy).size();
+//            ui->tableWidget->setColumnHidden(52,false);
+//            ui->tableWidget->setColumnHidden(53,false);
+//            ui->tableWidget->setColumnHidden(54,false);
+//            ui->tableWidget->setColumnHidden(55,false);
+// 1
+//            ui->tableWidget->setColumnHidden(116,false);
+//            ui->tableWidget->setColumnHidden(117,false);
+//            ui->tableWidget->setColumnHidden(118,false);
+//            ui->tableWidget->setColumnHidden(119,false);
+// 2
+//            ui->tableWidget->setColumnHidden(180,false);
+//            ui->tableWidget->setColumnHidden(181,false);
+//            ui->tableWidget->setColumnHidden(182,false);
+//            ui->tableWidget->setColumnHidden(183,false);
         }
         else
         {
-            dy = 10;
-            qDebug() << "сколько есть сигналов: " << getTable(dx,dy).size();
+            if(dx == 0)
+            {
+                ShowColandRow(20);
+                setLastSign(20);
+            }
+            if(dx == 1)
+            {
+                ShowColandRow(84);
+                setLastSign(84);
+            }
+            if(dx == 2)
+            {
+                ShowColandRow(148);
+                setLastSign(148);
+            }
+//            dy = 10;
+//            qDebug() << "сколько есть сигналов: " << getTable(dx,dy).size();
+//    ui->tableWidget->setColumnHidden(20,false);
+//    ui->tableWidget->setColumnHidden(21,false);
+//    ui->tableWidget->setColumnHidden(22,false);
+//    ui->tableWidget->setColumnHidden(23,false);
+// 1
+//            ui->tableWidget->setColumnHidden(84,false);
+//            ui->tableWidget->setColumnHidden(85,false);
+//            ui->tableWidget->setColumnHidden(86,false);
+//            ui->tableWidget->setColumnHidden(87,false);
+// 2
+//            ui->tableWidget->setColumnHidden(148,false);
+//            ui->tableWidget->setColumnHidden(149,false);
+//            ui->tableWidget->setColumnHidden(150,false);
+//            ui->tableWidget->setColumnHidden(151,false);
         }
         break;
-    case 65:
+    case 65: //40-50
         if(dY > 0)
         {
-            dy = 1;
-            qDebug() << "сколько есть сигналов: " << getTable(dx,dy).size();
+            if(dx == 0)
+            {
+                ShowColandRow(56);
+                setLastSign(56);
+            }
+            if(dx == 1)
+            {
+                ShowColandRow(120);
+                setLastSign(120);
+            }
+            if(dx == 2)
+            {
+                ShowColandRow(184);
+                setLastSign(184);
+            }
+//            dy = 1;
+//            qDebug() << "сколько есть сигналов: " << getTable(dx,dy).size();
+//            ui->tableWidget->setColumnHidden(56,false);
+//            ui->tableWidget->setColumnHidden(57,false);
+//            ui->tableWidget->setColumnHidden(58,false);
+//            ui->tableWidget->setColumnHidden(59,false);
+// 1
+//            ui->tableWidget->setColumnHidden(120,false);
+//            ui->tableWidget->setColumnHidden(121,false);
+//            ui->tableWidget->setColumnHidden(122,false);
+//            ui->tableWidget->setColumnHidden(123,false);
+// 2
+//            ui->tableWidget->setColumnHidden(184,false);
+//            ui->tableWidget->setColumnHidden(185,false);
+//            ui->tableWidget->setColumnHidden(186,false);
+//            ui->tableWidget->setColumnHidden(187,false);
         }
         else
         {
-            dy = 9;
-            qDebug() << "сколько есть сигналов: " << getTable(dx,dy).size();
+            if(dx == 0)
+            {
+                ShowColandRow(24);
+                setLastSign(24);
+            }
+            if(dx == 1)
+            {
+                ShowColandRow(88);
+                setLastSign(88);
+            }
+            if(dx == 2)
+            {
+                ShowColandRow(152);
+                setLastSign(152);
+            }
+//            dy = 9;
+//            qDebug() << "сколько есть сигналов: " << getTable(dx,dy).size();
+//            ui->tableWidget->setColumnHidden(24,false);
+//            ui->tableWidget->setColumnHidden(25,false);
+//            ui->tableWidget->setColumnHidden(26,false);
+//            ui->tableWidget->setColumnHidden(27,false);
+// 1
+//            ui->tableWidget->setColumnHidden(88,false);
+//            ui->tableWidget->setColumnHidden(89,false);
+//            ui->tableWidget->setColumnHidden(90,false);
+//            ui->tableWidget->setColumnHidden(91,false);
+// 2
+//            ui->tableWidget->setColumnHidden(152,false);
+//            ui->tableWidget->setColumnHidden(153,false);
+//            ui->tableWidget->setColumnHidden(154,false);
+//            ui->tableWidget->setColumnHidden(155,false);
         }
         break;
-    case 75:
+    case 75: //30-40
         if(dY > 0)
         {
-            dy = 0;
-            qDebug() << "сколько есть сигналов: " << getTable(dx,dy).size();
+            if(dx == 0)
+            {
+                ShowColandRow(60);
+                setLastSign(60);
+            }
+            if(dx == 1)
+            {
+                ShowColandRow(124);
+                setLastSign(124);
+            }
+            if(dx == 2)
+            {
+                ShowColandRow(188);
+                setLastSign(188);
+            }
+//            dy = 0;
+//            qDebug() << "сколько есть сигналов: " << getTable(dx,dy).size();
+//            ui->tableWidget->setColumnHidden(60,false);
+//            ui->tableWidget->setColumnHidden(61,false);
+//            ui->tableWidget->setColumnHidden(62,false);
+//            ui->tableWidget->setColumnHidden(63,false);
+// 1
+//            ui->tableWidget->setColumnHidden(124,false);
+//            ui->tableWidget->setColumnHidden(125,false);
+//            ui->tableWidget->setColumnHidden(126,false);
+//            ui->tableWidget->setColumnHidden(127,false);
+// 2
+//            ui->tableWidget->setColumnHidden(188,false);
+//            ui->tableWidget->setColumnHidden(189,false);
+//            ui->tableWidget->setColumnHidden(190,false);
+//            ui->tableWidget->setColumnHidden(191,false);
         }
         else
         {
-            dy = 8;
-            qDebug() << "сколько есть сигналов: " << getTable(dx,dy).size();
+            if(dx == 0)
+            {
+                ShowColandRow(28);
+                setLastSign(28);
+            }
+            if(dx == 1)
+            {
+                ShowColandRow(92);
+                setLastSign(92);
+            }
+            if(dx == 2)
+            {
+                ShowColandRow(156);
+                setLastSign(156);
+            }
+//            dy = 8;
+//            qDebug() << "сколько есть сигналов: " << getTable(dx,dy).size();
+//            0
+//            ui->tableWidget->setColumnHidden(28,false);
+//            ui->tableWidget->setColumnHidden(29,false);
+//            ui->tableWidget->setColumnHidden(30,false);
+//            ui->tableWidget->setColumnHidden(31,false);
+//             1
+//            ui->tableWidget->setColumnHidden(92,false);
+//            ui->tableWidget->setColumnHidden(93,false);
+//            ui->tableWidget->setColumnHidden(94,false);
+//            ui->tableWidget->setColumnHidden(95,false);
+//              2
+//            ui->tableWidget->setColumnHidden(156,false);
+//            ui->tableWidget->setColumnHidden(157,false);
+//            ui->tableWidget->setColumnHidden(158,false);
+//            ui->tableWidget->setColumnHidden(159,false);
         }
         break;
     default:
         break;
     }
 
-    ui->widget->layer("overlay")->setVisible(true);
+    //ui->widget->layer("overlay")->setVisible(true);
 
-    m_ItemText->setText(QString("Point Information\nX = %1\nY = %2").arg(QString::number(dX)).arg(QString::number(dY)));
+    //m_ItemText->setText(QString("Point Information\nX = %1\nY = %2").arg(QString::number(dX)).arg(QString::number(dY)));
 
     ui->widget->replot();
 
@@ -280,35 +764,6 @@ void Tsap::Slot_clickGraph(QCPAbstractPlottable* potItem, int num, QMouseEvent* 
 
 void Tsap::Slot_addData()
 {
-
-    int nRand = rand() % 1;
-    //ui->widget->graph(0)->addData(nIndex++, nRand);
-    //ui->widget->graph(0)->addData(vec_x[0], vec_y[0]);
-    ui->widget->graph(1)->addData(0.5, 5);
-    ui->widget->graph(0)->addData(1.5, 15);
-    ui->widget->graph(1)->addData(2.5, 25);
-    ui->widget->graph(0)->addData(1.5, 35);
-    ui->widget->graph(1)->addData(0.5, 45);
-    ui->widget->graph(0)->addData(1.5, 55);
-    ui->widget->graph(1)->addData(2.5, 65);
-    ui->widget->graph(1)->addData(0.5, -5);
-    ui->widget->graph(0)->addData(1.5, -15);
-    ui->widget->graph(1)->addData(2.5, -25);
-    ui->widget->graph(0)->addData(1.5, -35);
-    ui->widget->graph(1)->addData(0.5, -45);
-    ui->widget->graph(0)->addData(1.5, -55);
-    ui->widget->graph(1)->addData(2.5, -65);
-
-    //    if (nIndex >+ 3)
-    //    {
-    //        ui->widget->xAxis->moveRange(1);
-    //        pixX1++;pixX2++;
-    //        itemPixmapArray[0]->topLeft->setCoords(pixX1, 11); //0.5 0.1
-    //        itemPixmapArray[0]->bottomRight->setCoords(pixX2, 0.1); //0.5 0.1
-    //        itemPixmapArray[1]->topLeft->setCoords(pixX1, -11);
-    //        itemPixmapArray[1]->bottomRight->setCoords(pixX2, -0.1);
-    //    }
-
     ui->widget->replot();
 }
 
@@ -320,6 +775,7 @@ void Tsap::slot_addingSignalsToPlot(QVector<_SignalParam_formular> Targets)
     }
        // ui->widget->replot();
     eraseTargetTable();
+    //ui->tableWidget->clear();
 
     int k = -1;
     float kni = 0.5, is = 1.5, other = 2.5;
@@ -664,6 +1120,8 @@ void Tsap::slot_addingSignalsToPlot(QVector<_SignalParam_formular> Targets)
         }
     }
     ui->widget->replot();
+    setCellTable();
+    ui->tableWidget->update();
 }
 
 
@@ -687,21 +1145,6 @@ void Tsap::setTable(int col, int row, _SignalParam_formular Targets)
 
 QVector<_formularTargetsForTable> Tsap::getTable(int col, int row)
 {
-    /*
-    QVector<_formularTargetsForTable> TempTargets;
-    for(int i = 0; i < 2; ++i)
-    {
-        qDebug() << "колонка: " << i;
-        for(int j = 0; j < 2; ++j)
-        {
-            qDebug() << "строка: " << j;
-            if(Table[j][i].TargetsTable.size())
-                qDebug() << "размер: " << Table[j][i].TargetsTable[j].Carrier;
-            // qDebug() << "Частота: " << Table[j][i].TargetsTable[j].Carrier;
-            // qDebug() << "Длит: " << Table[j][i].TargetsTable[j].Dlit;
-            // qDebug() << "Период: " << Table[j][i].TargetsTable[j].Per;
-        }
-    }*/
     return Table[row][col].TargetsTable;
 }
 
@@ -714,6 +1157,128 @@ void Tsap::eraseTargetTable()
             Table[i][j].TargetsTable.clear();
         }
     }
+}
+
+void Tsap::setCellTable()
+{
+    int setCol = 0, setMaxCol = 0;
+    int setRow = 0;
+    for(int col = 0; col < 3; ++col)
+    {
+        if(col == 0)
+        {
+            setMaxCol = 0; // 64
+        }
+        if(col == 1)
+        {
+            setMaxCol = 64; //128
+        }
+        if(col == 2)
+        {
+            setMaxCol = 128; //192
+        }
+        for(int row = 15; row >= 0; --row, setMaxCol += 4) //дальше нужно понять как заполнить от 100+ к 30 или наоборот
+        {
+            setCol = setMaxCol + 1;
+            if(getTable(col,row).size())
+            {
+                qDebug() << "зашли сюда " ;
+                for(int i = 0, setRow = 0; i < getTable(col,row).size(); ++i)
+                {
+                    QTableWidgetItem *itemCer = new QTableWidgetItem;
+                    QTableWidgetItem *itemDlt = new QTableWidgetItem;
+                    QTableWidgetItem *itemPer = new QTableWidgetItem;
+
+                    itemCer->setText(QString::number(getTable(col,row)[i].Carrier));
+                    ui->tableWidget->setItem(setRow + 0,setCol,itemCer);
+
+                    itemDlt->setText(QString::number(getTable(col,row)[i].Dlit));
+                    ui->tableWidget->setItem(setRow + 1,setCol,itemDlt);
+
+                    itemPer->setText(QString::number(getTable(col,row)[i].Per));
+                    ui->tableWidget->setItem(setRow + 2,setCol,itemPer);
+
+                    if(setCol - 3 != setMaxCol)
+                    {
+                        setCol += 2;
+                    }
+                    else
+                    {
+                        setCol -= 2;
+                        setRow += 3;
+                    }
+                    if(setRow >= 18) break;
+                }
+            }
+        }
+    }
+
+}
+
+void Tsap::HidenColandRow(int col, bool local) //локальное или глобальное закрытие всего
+{
+    if(local)
+    {
+        for(int wCol = 0; wCol < 192; wCol += 2)
+        {
+            if(!ui->tableWidget->isColumnHidden(wCol))
+            {
+                ui->tableWidget->setColumnHidden(wCol,true);
+                ui->tableWidget->setColumnHidden(wCol-1,true);
+                ui->tableWidget->setColumnHidden(191,true);
+
+                for(int wRow = 0; wRow < 18; wRow ++)
+                {
+                    if(!ui->tableWidget->isRowHidden(wRow))
+                    {
+                        ui->tableWidget->setRowHidden(wRow, true);
+                    }
+                }
+            }
+        }
+    }
+    else
+    {
+        for(int tempcol = col; tempcol < col + 4; ++tempcol)
+        {
+            ui->tableWidget->setColumnHidden(tempcol,true);
+            for(int wRow = 0; wRow < 18; wRow ++)
+            {
+                if(!ui->tableWidget->isRowHidden(wRow))
+                {
+                    ui->tableWidget->setRowHidden(wRow, true);
+                }
+            }
+        }
+    }
+
+}
+
+void Tsap::ShowColandRow(int startCol)
+{
+
+        for(int tempcol = startCol; tempcol < startCol + 4; ++tempcol)
+        {
+            ui->tableWidget->setColumnHidden(tempcol,false); //проверяем схлопнута ли ячейка
+            for(int wRow = 0; wRow < 18; wRow ++)
+            {
+                if(ui->tableWidget->isRowHidden(wRow)) //проверяем схлопнута ли ячейка (излишняя проверка честно говоря)
+                {
+                    if(ui->tableWidget->item(wRow,tempcol)) //проверяем есть ли там данные
+                        ui->tableWidget->setRowHidden(wRow, false);
+                }
+            }
+        }
+}
+
+void Tsap::setLastSign(int value)
+{
+    LastSigShow = value;
+}
+
+int Tsap::getLastSign()
+{
+    return LastSigShow;
 }
 
 void Tsap::Slot_set_workingmode_from_mw(unsigned char value, unsigned short countTargetsPPS, unsigned short countTargetsZPS)

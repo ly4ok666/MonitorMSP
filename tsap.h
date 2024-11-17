@@ -30,9 +30,15 @@ public:
     void setTable(int col, int row, _SignalParam_formular Targets);
     QVector<_formularTargetsForTable> getTable(int col, int row);
     void eraseTargetTable();
+    void setCellTable();
+    void HidenColandRow(int, bool);
+    void ShowColandRow(int);
+    void setLastSign(int);
+    int getLastSign();
+
 private:
     Ui::Tsap *ui;
-
+    int LastSigShow = 0;
     //тут нужно доразобраться что и зачем ме нужно будет
     QVector<double> vec_x, vec_y;
     QVector<QCPItemPixmap*> itemPixmapArray;

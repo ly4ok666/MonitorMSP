@@ -290,30 +290,139 @@
       <widget class="QTableWidget" name="tableWidget">
        <property name="geometry">
         <rect>
-         <x>20</x>
-         <y>30</y>
-         <width>851</width>
-         <height>321</height>
+         <x>30</x>
+         <y>50</y>
+         <width>841</width>
+         <height>231</height>
         </rect>
        </property>
+       <property name="styleSheet">
+        <string notr="true">QTableView#tableWidget
+{
+	border: 1px solid rgb(181, 230, 29);
+	Color: rgb(181, 230, 29);
+	background: transparent;
+	gridline-color: rgb(181, 230, 29);
+
+}
+
+
+
+
+QScrollBar:vertical
+ {
+        background-color: #2A2929;
+        width: 10px;
+        margin: 10px  0px 10px 0px;
+        border: 1px transparent; /*#2A2929 */
+        border-radius: 4px;
+}
+ QScrollBar::handle:vertical
+ {
+        background-color: rgb(181, 230, 29);         
+        min-height: 5px;
+        border-radius: 4px;
+}
+QScrollBar::sub-line:vertical
+ {
+        margin: 3px 0px 3px 0px;
+        border-image: none;        /* # &amp;lt;-------- */
+        height: 1px;
+        width: 1px;
+        subcontrol-position: top;
+        subcontrol-origin: margin;
+}
+ QScrollBar::add-line:vertical:on
+{
+        border-image: none;                /* # &amp;lt;-------- */
+        height: 1 px;
+        width: 1 px;
+        subcontrol-position: bottom;
+        subcontrol-origin: margin;
+}
+</string>
+       </property>
+       <property name="verticalScrollBarPolicy">
+        <enum>Qt::ScrollBarAsNeeded</enum>
+       </property>
+       <property name="horizontalScrollBarPolicy">
+        <enum>Qt::ScrollBarAlwaysOff</enum>
+       </property>
+       <property name="textElideMode">
+        <enum>Qt::ElideLeft</enum>
+       </property>
+       <property name="horizontalScrollMode">
+        <enum>QAbstractItemView::ScrollPerPixel</enum>
+       </property>
        <property name="rowCount">
-        <number>3</number>
+        <number>6</number>
        </property>
        <property name="columnCount">
-        <number>3</number>
+        <number>42</number>
        </property>
+       <attribute name="horizontalHeaderVisible">
+        <bool>false</bool>
+       </attribute>
        <attribute name="horizontalHeaderMinimumSectionSize">
         <number>23</number>
        </attribute>
        <attribute name="horizontalHeaderDefaultSectionSize">
-        <number>278</number>
+        <number>205</number>
+       </attribute>
+       <attribute name="verticalHeaderVisible">
+        <bool>false</bool>
+       </attribute>
+       <attribute name="verticalHeaderMinimumSectionSize">
+        <number>23</number>
        </attribute>
        <attribute name="verticalHeaderDefaultSectionSize">
-        <number>71</number>
+        <number>38</number>
        </attribute>
        <row/>
        <row/>
        <row/>
+       <row/>
+       <row/>
+       <row/>
+       <column/>
+       <column/>
+       <column/>
+       <column/>
+       <column/>
+       <column/>
+       <column/>
+       <column/>
+       <column/>
+       <column/>
+       <column/>
+       <column/>
+       <column/>
+       <column/>
+       <column/>
+       <column/>
+       <column/>
+       <column/>
+       <column/>
+       <column/>
+       <column/>
+       <column/>
+       <column/>
+       <column/>
+       <column/>
+       <column/>
+       <column/>
+       <column/>
+       <column/>
+       <column/>
+       <column/>
+       <column/>
+       <column/>
+       <column/>
+       <column/>
+       <column/>
+       <column/>
+       <column/>
+       <column/>
        <column/>
        <column/>
        <column/>
